@@ -19,9 +19,12 @@ public class Book {
 
     //methods
 
-
     public String getBookTitle() {
         return bookTitle;
+    }
+
+    public void setBookTitle(String bookTitle) {
+        this.bookTitle = bookTitle;
     }
 
     public String getBookAuthor() {
@@ -36,13 +39,22 @@ public class Book {
         return bookGenre;
     }
 
+    public void setBookGenre(String bookGenre) {
+        this.bookGenre = bookGenre;
+    }
+
     public String getBookOverview() {
         return bookOverview;
+    }
+
+    public void setBookOverview(String bookOverview) {
+        this.bookOverview = bookOverview;
     }
 
     public String getBookISBN() {
         return bookISBN;
     }
+
     public String getBookInformation()
     {
         String bookInformation = bookTitle + "; ";

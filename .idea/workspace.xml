@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Boardgames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" afterDir="false" />
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="initial classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Boardgames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Boardgames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +84,20 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="library.system.Main" />
+      <module name="library.system.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="library.system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -117,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.library.system [build]" />
       </list>
     </recent_temporary>
@@ -129,8 +134,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682693722039</updated>
-      <workItem from="1682693723405" duration="2323000" />
+      <workItem from="1682693723405" duration="4151000" />
     </task>
+    <task id="LOCAL-00001" summary="initial classes">
+      <created>1682696097348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682696097348</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,5 +159,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial classes" />
   </component>
 </project>

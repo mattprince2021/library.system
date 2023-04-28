@@ -24,8 +24,16 @@ public class Tables {
         return tablesSize;
     }
 
+    public void setTablesSize(String tablesSize) {
+        this.tablesSize = tablesSize;
+    }
+
     public String getTablesPlayers() {
         return tablesPlayers;
+    }
+
+    public void setTablesPlayers(String tablesPlayers) {
+        this.tablesPlayers = tablesPlayers;
     }
 
     public String getTablesInformation()

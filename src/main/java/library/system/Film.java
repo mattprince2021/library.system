@@ -2,14 +2,14 @@ package library.system;
 
 public class Film {
     //instance variable
-    private String filmTitle, filmArtist, filmFormat, filmGenre, filmOverview, filmBarcode;
+    private String filmTitle, filmActor, filmFormat, filmGenre, filmOverview, filmBarcode;
 
     //constructor
-    public Film(String fTitle, String fArtist, String fFormat, String fGenre, String fOverview,
+    public Film(String fTitle, String fActor, String fFormat, String fGenre, String fOverview,
                   String fBarcode)
     {
         filmTitle = fTitle;
-        filmArtist = fArtist;
+        filmActor = fActor;
         filmFormat = fFormat;
         filmGenre = fGenre;
         filmOverview = fOverview;
@@ -23,8 +23,12 @@ public class Film {
         return filmTitle;
     }
 
+    public void setFilmTitle(String filmTitle) {
+        this.filmTitle = filmTitle;
+    }
+
     public String getFilmArtist() {
-        return filmArtist;
+        return filmActor;
     }
 
     public String getFilmFormat() {
@@ -35,8 +39,16 @@ public class Film {
         return filmGenre;
     }
 
+    public void setFilmGenre(String filmGenre) {
+        this.filmGenre = filmGenre;
+    }
+
     public String getFilmOverview() {
         return filmOverview;
+    }
+
+    public void setFilmOverview(String filmOverview) {
+        this.filmOverview = filmOverview;
     }
 
     public String getFilmBarcode() {
@@ -46,7 +58,7 @@ public class Film {
     public String getFilmInformation()
     {
         String filmInformation = filmTitle + "; ";
-        filmInformation += filmArtist + "; ";
+        filmInformation += filmActor + "; ";
         filmInformation += filmFormat + "; ";
         filmInformation += filmGenre + "; ";
         filmInformation += filmBarcode + "; ";

@@ -22,6 +22,10 @@ public class Music {
         return musicTitle;
     }
 
+    public void setMusicTitle(String musicTitle) {
+        this.musicTitle = musicTitle;
+    }
+
     public String getMusicArtist() {
         return musicArtist;
     }
@@ -34,12 +38,20 @@ public class Music {
         return musicGenre;
     }
 
+    public void setMusicGenre(String musicGenre) {
+        this.musicGenre = musicGenre;
+    }
+
     public String getMusicBarcode() {
         return musicBarcode;
     }
 
     public String getMusicOverview() {
         return musicOverview;
+    }
+
+    public void setMusicOverview(String musicOverview) {
+        this.musicOverview = musicOverview;
     }
 
     public String getMusicInformation()

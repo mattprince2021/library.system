@@ -24,8 +24,16 @@ public class Boardgames {
         return gamesTitle;
     }
 
+    public void setGamesTitle(String gamesTitle) {
+        this.gamesTitle = gamesTitle;
+    }
+
     public String getGamesAges() {
         return gamesAges;
+    }
+
+    public void setGamesAges(String gamesAges) {
+        this.gamesAges = gamesAges;
     }
 
     public String getGamesMaxPlayers() {
@@ -39,12 +47,20 @@ public class Boardgames {
         return gamesGenre;
     }
 
+    public void setGamesGenre(String gamesGenre) {
+        this.gamesGenre = gamesGenre;
+    }
+
     public String getGamesBarcode() {
         return gamesBarcode;
     }
 
     public String getGamesOverview() {
         return gamesOverview;
+    }
+
+    public void setGamesOverview(String gamesOverview) {
+        this.gamesOverview = gamesOverview;
     }
 
     public String getGamesInformation()
