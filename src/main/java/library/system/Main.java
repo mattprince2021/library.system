@@ -1,15 +1,20 @@
 package library.system;
 
-public class Main
-{
-    public static void main(String[] args) {
-        Book testing = new Book("The Star", "M. X. Smith", "Hardback", "Horror",
-                "First book in an exciting new series, blending the real and the absurd",
-                "274573839475");
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-        String bookName = testing.getBookTitle();
-        System.out.println("Book is " + bookName);
-        String bookAuthor = testing.getBookAuthor();
-        System.out.println("written by " + bookAuthor);
+public class Main extends Application {
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("login_screen.fxml"));
+
+        Scene scene = new Scene(root,994,697);
+
+        primaryStage.setTitle("Prince Library");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }

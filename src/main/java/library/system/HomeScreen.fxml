@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="library.system.HomeScreenController"
+          alignment="TOP_LEFT"
+          hgap="10"
+          vgap="10"
+          stylesheets="@Login.css">
+
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+    <Text id="welcome-text"
+          text="Library Home Screen"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="0"
+          GridPane.columnSpan="2"
+    />
+
+    <Label fx:id="welcomeMessage"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="1"
+    />
+
+    <Label text="Choose your option"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="2"
+           GridPane.columnSpan="2"
+    />
+
+    <Button text="Add Book"
+            HBox.hgrow="ALWAYS"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="3"
+            />
+
+    <Button text="Edit Book"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="3"
+            HBox.hgrow="ALWAYS"/>
+
+    <Button text="Add Film"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="4"
+            HBox.hgrow="ALWAYS"/>
+
+    <Button text="Edit Film"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="4"
+            HBox.hgrow="ALWAYS"/>
+
+    <Button text="Add Music"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="5"
+            HBox.hgrow = "ALWAYS"/>
+
+    <Button text="Edit Music"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="5"
+            HBox.hgrow = "ALWAYS"/>
+
+    <Button text="Add Board Game"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="6"
+            HBox.hgrow = "ALWAYS"/>
+
+    <Button text="Edit Board Game"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="6"
+            HBox.hgrow = "ALWAYS"/>
+
+    <Button text="Add Table"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="7"
+            HBox.hgrow = "ALWAYS"/>
+
+    <Button text="Edit Table"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="7"
+            HBox.hgrow = "ALWAYS"/>
+
+</GridPane>
