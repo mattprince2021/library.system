@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="initial classes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/BookBackground.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="initial classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +193,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682693722039</updated>
-      <workItem from="1682693723405" duration="35416000" />
+      <workItem from="1682693723405" duration="36179000" />
     </task>
     <task id="LOCAL-00001" summary="initial classes">
       <created>1682696097348</created>
@@ -228,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682806612352</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial classes">
+      <created>1682807097390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682807097390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
