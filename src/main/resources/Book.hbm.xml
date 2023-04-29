@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name = "library.system.Book" table = "bookTable">
+        <id name = "bookISBN" column = "bookISBN" type = "string" />
+        <property name = "bookTitle" column = "bookTitle" type = "string"/>
+        <property name = "bookAuthor" column = "bookAuthor" type = "string"/>
+        <property name = "bookFormat" column = "bookFormat" type = "string"/>
+        <property name = "bookGenre" column = "bookGenre" type = "string"/>
+        <property name = "bookOverview" column = "bookOverview" type = "string"/>
+        <property name = "bookQuantity" column = "bookQuantity" type = "int"/>
+    </class>
+</hibernate-mapping>
