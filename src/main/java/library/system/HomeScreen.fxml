@@ -37,7 +37,6 @@
     />
 
     <Button text="Add Book"
-            HBox.hgrow="ALWAYS"
             GridPane.columnIndex="0"
             GridPane.rowIndex="3"
             />
@@ -45,46 +44,46 @@
     <Button text="Edit Book"
             GridPane.columnIndex="1"
             GridPane.rowIndex="3"
-            HBox.hgrow="ALWAYS"/>
+    />
 
     <Button text="Add Film"
             GridPane.columnIndex="0"
             GridPane.rowIndex="4"
-            HBox.hgrow="ALWAYS"/>
+    />
 
     <Button text="Edit Film"
             GridPane.columnIndex="1"
             GridPane.rowIndex="4"
-            HBox.hgrow="ALWAYS"/>
+    />
 
     <Button text="Add Music"
             GridPane.columnIndex="0"
             GridPane.rowIndex="5"
-            HBox.hgrow = "ALWAYS"/>
+    />
 
     <Button text="Edit Music"
             GridPane.columnIndex="1"
             GridPane.rowIndex="5"
-            HBox.hgrow = "ALWAYS"/>
+    />
 
     <Button text="Add Board Game"
             GridPane.columnIndex="0"
             GridPane.rowIndex="6"
-            HBox.hgrow = "ALWAYS"/>
+    />
 
     <Button text="Edit Board Game"
             GridPane.columnIndex="1"
             GridPane.rowIndex="6"
-            HBox.hgrow = "ALWAYS"/>
+    />
 
     <Button text="Add Table"
             GridPane.columnIndex="0"
             GridPane.rowIndex="7"
-            HBox.hgrow = "ALWAYS"/>
+    />
 
     <Button text="Edit Table"
             GridPane.columnIndex="1"
             GridPane.rowIndex="7"
-            HBox.hgrow = "ALWAYS"/>
+    />
 
 </GridPane>

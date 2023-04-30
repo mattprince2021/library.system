@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="initial classes" />
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Updated with controllers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,8 +61,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -83,7 +88,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -100,7 +106,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.library.system [run]">
-    <configuration name="Main_OLD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="library.system.Main_OLD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="library.system.Main_OLD" />
       <module name="library.system.main" />
       <extension name="coverage">
@@ -181,7 +187,7 @@
         <item itemvalue="Gradle.library.system [run]" />
         <item itemvalue="Gradle.library.system [build]" />
         <item itemvalue="Gradle.library.system [buildDependents]" />
-        <item itemvalue="Application.Main_OLD" />
+        <item itemvalue="Application.library.system.Main_OLD" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682693722039</updated>
-      <workItem from="1682693723405" duration="36179000" />
+      <workItem from="1682693723405" duration="39652000" />
     </task>
     <task id="LOCAL-00001" summary="initial classes">
       <created>1682696097348</created>
@@ -223,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682807097390</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated with controllers">
+      <created>1682807895436</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682807895436</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +255,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial classes" />
+    <MESSAGE value="Updated with controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated with controllers" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
