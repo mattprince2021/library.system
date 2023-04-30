@@ -19,13 +19,13 @@
 
     <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
 
-    <Text id="welcome-text"
+    <Text id="addBookMessage"
           text="Add Book To Library"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label fx:id="welcomeMessage"
+    <Label fx:id="addBook"
            text="Author"
            GridPane.columnIndex="0"
            GridPane.rowIndex="1"

@@ -18,7 +18,7 @@ public class LoginScreenController
     @FXML private TextField userNameEntry;
 
     @FXML
-    protected void handleSubmitButtonAction(ActionEvent event) throws Exception
+    protected void loginButtonAction(ActionEvent event) throws Exception
     {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
@@ -26,18 +26,12 @@ public class LoginScreenController
 
         HomeScreenController homeScreenController = loader.getController();
 
-        String welcomeMessage = "Hello, " + userNameEntry.getText();
-
-        homeScreenController.receiveInformation(welcomeMessage);
-
         Scene changedScene = new Scene(root, 994,697);
 
         Stage stage = (Stage) loginButton.getScene().getWindow();
 
         stage.setScene(changedScene);
         stage.show();
-
-        //actionTarget.setText("Sign In Button Clicked");
 
     }
 }

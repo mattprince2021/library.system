@@ -16,74 +16,32 @@
           vgap="10"
           stylesheets="@Login.css">
 
-    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+    <padding><Insets top="25" bottom="25" right="25" left="25" /></padding>
+    <!--    <gridLinesVisible>true</gridLinesVisible>-->
 
+    <!-- Widgets here -->
     <Text id="welcome-text"
-          text="Library Home Screen"
+          text="Welcome to the Cinema System"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0"
-          GridPane.columnSpan="2"
-    />
+          GridPane.columnSpan="2"/>
 
-    <Label fx:id="welcomeMessage"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="1"
-    />
-
-    <Label text="Choose your option"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="2"
-           GridPane.columnSpan="2"
-    />
-
-    <Button text="Add Book"
+    <Button fx:id="addBookButton"
             GridPane.columnIndex="0"
-            GridPane.rowIndex="3"
-            />
+            GridPane.rowIndex="1"
+            GridPane.columnSpan="1"
+            onAction="#addBookButtonAction"
+    />
 
     <Button text="Edit Book"
             GridPane.columnIndex="1"
-            GridPane.rowIndex="3"
-    />
-
-    <Button text="Add Film"
-            GridPane.columnIndex="0"
-            GridPane.rowIndex="4"
-    />
-
-    <Button text="Edit Film"
-            GridPane.columnIndex="1"
-            GridPane.rowIndex="4"
-    />
+            GridPane.rowIndex="1"/>
 
     <Button text="Add Music"
             GridPane.columnIndex="0"
-            GridPane.rowIndex="5"
-    />
+            GridPane.rowIndex="2"/>
 
     <Button text="Edit Music"
             GridPane.columnIndex="1"
-            GridPane.rowIndex="5"
-    />
-
-    <Button text="Add Board Game"
-            GridPane.columnIndex="0"
-            GridPane.rowIndex="6"
-    />
-
-    <Button text="Edit Board Game"
-            GridPane.columnIndex="1"
-            GridPane.rowIndex="6"
-    />
-
-    <Button text="Add Table"
-            GridPane.columnIndex="0"
-            GridPane.rowIndex="7"
-    />
-
-    <Button text="Edit Table"
-            GridPane.columnIndex="1"
-            GridPane.rowIndex="7"
-    />
-
+            GridPane.rowIndex="2"/>
 </GridPane>
