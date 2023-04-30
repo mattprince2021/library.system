@@ -4,15 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Updated with controllers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.java" afterDir="false" />
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Updating with controllers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBoardgames.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBoardgamesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBoardgames.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBoardgamesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBook.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTable.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -245,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682807895436</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updating with controllers">
+      <created>1682866443226</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682866443226</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updating with controllers">
+      <created>1682866494231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682866494231</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +293,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial classes" />
     <MESSAGE value="Updated with controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated with controllers" />
+    <MESSAGE value="Updated with fixed button and scene changes &#10;Button size is screwed though :(" />
+    <MESSAGE value="Updating with controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating with controllers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

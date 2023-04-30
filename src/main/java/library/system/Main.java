@@ -6,6 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -17,4 +20,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
+    public static List<Stage> stageval = new ArrayList<Stage>();
+    public static List<String>fxmlval = new ArrayList<String>();
 }
