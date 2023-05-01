@@ -23,30 +23,80 @@
           text="Add Film To Library"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0"
-          GridPane.columnSpan="2"/>
+          GridPane.columnSpan="2"
+    />
 
     <Label fx:id="addFilm"
-           text="Artist"
+           text="Title"
            GridPane.columnIndex="0"
            GridPane.rowIndex="1"
     />
 
-    <TextField GridPane.columnIndex="0"
-               GridPane.rowIndex="2"/>
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="1"
+    />
 
-    <Label text="Title"
-           GridPane.columnIndex="1"
-           GridPane.rowIndex="1"
+    <Label text="Studio"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="2"
     />
 
     <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="2"/>
-
-    <Label text="Genre"
-           GridPane.columnIndex="2"
-           GridPane.rowIndex="1"
+               GridPane.rowIndex="2"
     />
 
-    <TextField GridPane.columnIndex="2"
-               GridPane.rowIndex="2"/>
+    <Label text="Genre"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="3"
+    />
+
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="3"
+    />
+
+    <Label text="Format"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="4"
+    />
+
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="4"
+    />
+
+    <Label text="Age Rating"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="5"
+    />
+
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="5"
+    />
+
+    <Label text="Overview"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="6"
+           GridPane.valignment="TOP"
+    />
+
+    <TextArea GridPane.columnIndex="1"
+              GridPane.rowIndex="6"
+              GridPane.hgrow="ALWAYS"
+    />
+
+    <Label text="Barcode"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="7"
+    />
+
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="7"/>
+
+    <Label text="Quantity Available"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="8"
+    />
+
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="8"/>
+
 </GridPane>

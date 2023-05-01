@@ -21,7 +21,7 @@
 
     <!-- Widgets here -->
     <Text id="welcome-text"
-          text="Welcome to the Cinema System"
+          text="Welcome to the Prince Library"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>

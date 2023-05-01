@@ -26,27 +26,35 @@
           GridPane.columnSpan="2"/>
 
     <Label fx:id="editTable"
-           text="Artist"
+           text="Table Number"
            GridPane.columnIndex="0"
            GridPane.rowIndex="1"
     />
 
-    <TextField GridPane.columnIndex="0"
-               GridPane.rowIndex="2"/>
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="1"/>
 
-    <Label text="Title"
-           GridPane.columnIndex="1"
-           GridPane.rowIndex="1"
+    <Label text="Table Size"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="2"
     />
 
     <TextField GridPane.columnIndex="1"
                GridPane.rowIndex="2"/>
 
-    <Label text="Genre"
-           GridPane.columnIndex="2"
-           GridPane.rowIndex="1"
+    <Label text="Number of Players"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="3"
     />
 
-    <TextField GridPane.columnIndex="2"
-               GridPane.rowIndex="2"/>
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="3"/>
+
+    <Label text="Quantity Available"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="4"
+    />
+
+    <TextField GridPane.columnIndex="1"
+               GridPane.rowIndex="4"/>
 </GridPane>

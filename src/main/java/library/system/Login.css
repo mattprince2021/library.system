@@ -7,7 +7,6 @@
     -fx-font-size: 15px;
     -fx-font-weight: bold;
     -fx-text-fill: #503599;
-    /*-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );*/
 }
 
 .button {
@@ -15,7 +14,6 @@
     -fx-font-family: "Arial Narrow";
     -fx-font-weight: bold;
     -fx-background-color: linear-gradient(#61a2b1, #2A5058);
-    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 }
 
 .button:hover {
@@ -26,11 +24,70 @@
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
-    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
 
 #actionTarget {
     -fx-fill: FIREBRICK;
     -fx-font-weight: bold;
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#addBookMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#editBookMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#addMusicMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#editMusicMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#addFilmMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#editFilmMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#addTableMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#editTableMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#addBoardgamesMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
+}
+
+#editBoardgamesMessage{
+    -fx-font-size: 24px;
+    -fx-font-family: "Tahoma";
+    -fx-fill: #818181;
 }
