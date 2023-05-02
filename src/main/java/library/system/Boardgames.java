@@ -2,19 +2,20 @@ package library.system;
 
 public class Boardgames {
     //instance variable
-    private String gamesTitle, gamesAges, gamesMaxPlayers, gamesMinPlayers, gamesGenre, gamesOverview, gamesBarcode;
+    private String gamesTitle, gamesAges, gamesMinPlayers, gamesGenre, gamesOverview, gamesBarcode;
+    private int gamesQuantity;
 
     //constructor
-    public Boardgames(String gTitle, String gAges, String gMax, String gMin, String gGenre, String gOverview,
-                      String gBarcode)
+    public Boardgames(String gTitle, String gAges, String gMin, String gGenre, String gOverview,
+                      String gBarcode, int gQuantity)
     {
         gamesTitle = gTitle;
         gamesAges = gAges;
-        gamesMaxPlayers = gMax;
         gamesMinPlayers = gMin;
         gamesGenre = gGenre;
         gamesOverview = gOverview;
         gamesBarcode = gBarcode;
+        gamesQuantity = gQuantity;
     }
 
     //methods
@@ -36,13 +37,12 @@ public class Boardgames {
         this.gamesAges = gamesAges;
     }
 
-    public String getGamesMaxPlayers() {
-        return gamesMaxPlayers;
-    }
-
     public String getGamesMinPlayers() {
         return gamesMinPlayers;
     }
+
+    public void setGamesMinPlayers(String gamesMinPlayers) { this.gamesMinPlayers = gamesMinPlayers; }
+
     public String getGamesGenre() {
         return gamesGenre;
     }
@@ -63,15 +63,19 @@ public class Boardgames {
         this.gamesOverview = gamesOverview;
     }
 
-    public String getGamesInformation()
-    {
-        String gamesInformation = gamesTitle + "; ";
-        gamesInformation += gamesAges + "; From ";
-        gamesInformation += gamesMinPlayers + " to ";
-        gamesInformation += gamesMaxPlayers + "players; ";
-        gamesInformation += gamesGenre + "; ";
-        gamesInformation += gamesBarcode + "; ";
-        gamesInformation += gamesOverview;
-        return gamesInformation;
-    }
+    public int getGamesQuantity() { return gamesQuantity; }
+
+    public void setGamesQuantity(int gamesQuantity) { this.gamesQuantity = gamesQuantity; }
+
+//    public String getGamesInformation()
+//    {
+//        String gamesInformation = gamesTitle + "; ";
+//        gamesInformation += gamesAges + "; From ";
+//        gamesInformation += gamesMinPlayers + " to ";
+//        gamesInformation += gamesGenre + "; ";
+//        gamesInformation += gamesBarcode + "; ";
+//        gamesInformation += gamesQuantity + "; ";
+//        gamesInformation += gamesOverview;
+//        return gamesInformation;
+//    }
 }

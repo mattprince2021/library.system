@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name = "library.system.Music" table = "musicTable">
+        <id name = "musicBarcode" column = "musicBarcode" type = "string" />
+        <property name = "musicTitle" column = "musicTitle" type = "string"/>
+        <property name = "musicArtist" column = "musicArtist" type = "string"/>
+        <property name = "musicFormat" column = "musicFormat" type = "string"/>
+        <property name = "musicGenre" column = "musicGenre" type = "string"/>
+        <property name = "musicOverview" column = "musicOverview" type = "string"/>
+        <property name = "musicQuantity" column = "musicQuantity" type = "string"/>
+    </class>
+</hibernate-mapping>

@@ -2,18 +2,20 @@ package library.system;
 
 public class Film {
     //instance variable
-    private String filmTitle, filmActor, filmFormat, filmGenre, filmOverview, filmBarcode;
+    private String filmTitle, filmStudio, filmFormat, filmGenre, filmOverview, filmBarcode;
+    private int filmQuantity;
 
     //constructor
-    public Film(String fTitle, String fActor, String fFormat, String fGenre, String fOverview,
-                  String fBarcode)
+    public Film(String fTitle, String fStudio, String fFormat, String fGenre, String fOverview,
+                  String fBarcode, int fQuantity)
     {
         filmTitle = fTitle;
-        filmActor = fActor;
+        filmStudio = fStudio;
         filmFormat = fFormat;
         filmGenre = fGenre;
         filmOverview = fOverview;
         filmBarcode = fBarcode;
+        filmQuantity = fQuantity;
     }
 
     //methods
@@ -27,8 +29,8 @@ public class Film {
         this.filmTitle = filmTitle;
     }
 
-    public String getFilmArtist() {
-        return filmActor;
+    public String getFilmStudio() {
+        return filmStudio;
     }
 
     public String getFilmFormat() {
@@ -55,15 +57,20 @@ public class Film {
         return filmBarcode;
     }
 
-    public String getFilmInformation()
-    {
-        String filmInformation = filmTitle + "; ";
-        filmInformation += filmActor + "; ";
-        filmInformation += filmFormat + "; ";
-        filmInformation += filmGenre + "; ";
-        filmInformation += filmBarcode + "; ";
-        filmInformation += filmOverview;
-        return filmInformation;
-    }
+    public int getFilmQuantity() { return filmQuantity; }
+
+    public void setFilmQuantity() { this.filmQuantity = filmQuantity;}
+
+//    public String getFilmInformation()
+//    {
+//        String filmInformation = filmTitle + "; ";
+//        filmInformation += filmStudio + "; ";
+//        filmInformation += filmFormat + "; ";
+//        filmInformation += filmGenre + "; ";
+//        filmInformation += filmBarcode + "; ";
+//        filmInformation += filmQuantity + "; ";
+//        filmInformation += filmOverview;
+//        return filmInformation;
+//    }
 }
 

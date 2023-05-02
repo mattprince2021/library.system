@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name = "library.system.Boardgames" table = "gamesTable">
+        <id name = "gamesBarcode" column = "gamesBarcode" type = "string" />
+        <property name = "gamesTitle" column = "gamesTitle" type = "string"/>
+        <property name = "gamesAges" column = "gamesAges" type = "string"/>
+        <property name = "gamesMinPlayers" column = "gamesMinPlayers" type = "string"/>
+        <property name = "gamesGenre" column = "gamesGenre" type = "string"/>
+        <property name = "gamesOverview" column = "gamesOverview" type = "string"/>
+        <property name = "gamesQuantity" column = "gamesQuantity" type = "string"/>
+    </class>
+</hibernate-mapping>

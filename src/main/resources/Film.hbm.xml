@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name = "library.system.Film" table = "moviesTable">
+        <id name = "filmBarcode" column = "moviesBarcode" type = "string" />
+        <property name = "filmTitle" column = "moviesTitle" type = "string"/>
+        <property name = "filmStudio" column = "moviesStudio" type = "string"/>
+        <property name = "filmFormat" column = "moviesormat" type = "string"/>
+        <property name = "filmGenre" column = "moviesGenre" type = "string"/>
+        <property name = "filmOverview" column = "moviesOverview" type = "string"/>
+        <property name = "filmQuantity" column = "moviesQuantity" type = "string"/>
+    </class>
+</hibernate-mapping>

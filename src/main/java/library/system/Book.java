@@ -3,13 +3,12 @@ package library.system;
 public class Book {
     //instance variables
 
-    private String bookTitle, bookAuthor, bookFormat, bookGenre, bookOverview, bookISBN;
-    private int bookQuantity;
+    private String bookTitle, bookAuthor, bookFormat, bookGenre, bookOverview, bookISBN,bookQuantity;
 
 
     //constructors
 
-    public Book(String bTitle, String bAuthor, String bFormat, String bGenre, String bOverview, String bISBN, int bQty)
+    public Book(String bTitle, String bAuthor, String bFormat, String bGenre, String bOverview, String bISBN, String bQty)
     {
         bookTitle = bTitle;
         bookAuthor = bAuthor;
@@ -22,49 +21,31 @@ public class Book {
 
     //methods
 
-    public String getBookTitle() {
-        return bookTitle;
-    }
+    public String getBookTitle() { return bookTitle; }
 
-    public void setBookTitle(String bookTitle) {
-        this.bookTitle = bookTitle;
-    }
+    public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
 
-    public String getBookAuthor() {
-        return bookAuthor;
-    }
+    public String getBookAuthor() { return bookAuthor; }
 
-    public String getBookFormat() {
-        return bookFormat;
-    }
+    public String getBookFormat() { return bookFormat; }
 
-    public String getBookGenre() {
-        return bookGenre;
-    }
+    public String getBookGenre() { return bookGenre; }
 
-    public void setBookGenre(String bookGenre) {
-        this.bookGenre = bookGenre;
-    }
+    public void setBookGenre(String bookGenre) { this.bookGenre = bookGenre; }
 
-    public String getBookOverview() {
-        return bookOverview;
-    }
+    public String getBookOverview() { return bookOverview; }
 
-    public void setBookOverview(String bookOverview) {
-        this.bookOverview = bookOverview;
-    }
+    public void setBookOverview(String bookOverview) { this.bookOverview = bookOverview; }
 
     public String getBookISBN() {
         return bookISBN;
     }
 
-    public int getBookQuantity() {
+    public String getBookQuantity() {
         return bookQuantity;
     }
 
-    public void setBookQuantity(int bookQuantity) {
-        this.bookQuantity = bookQuantity;
-    }
+    public void setBookQuantity(String bookQuantity) { this.bookQuantity = bookQuantity; }
 
     public String getBookInformation()
     {
