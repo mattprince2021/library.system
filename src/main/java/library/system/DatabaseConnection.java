@@ -1,5 +1,5 @@
-
 package library.system;
+
 import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
@@ -8,19 +8,19 @@ public class DatabaseConnection
 {
     static Session databaseSession = null;
     static SessionFactory sessionFactory = null;
-    public static void addEmployeeToDatabase(Employee employeeToAdd)
+    public static void addBookToDatabase(Book bookToAdd)
     {
         openDBSession();
-        employeeToAdd.setEmployeeID(getNextID());
+        bookToAdd.setBookID(getNextID());
         databaseSession.beginTransaction();
-        databaseSession.persist(employeeToAdd);
+        databaseSession.persist(bookToAdd);
         databaseSession.getTransaction().commit();
         closeDBSession();
     }
-    public static List<?> getEmployee(int employeeID)
+    public static List<?> getBook(int bookID)
     {
         openDBSession();
-        Query query = databaseSession.createQuery("from Employee where employeeID = "+employeeID);
+        Query query = databaseSession.createQuery("from Book where bookID = "+bookID);
         List<?> list = query.list();
         closeDBSession();
         return list;

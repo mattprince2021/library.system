@@ -17,9 +17,7 @@
           stylesheets="@Login.css">
 
     <padding><Insets top="25" bottom="25" right="25" left="25" /></padding>
-    <!--    <gridLinesVisible>true</gridLinesVisible>-->
 
-    <!-- Widgets here -->
     <Text id="welcome-text"
           text="Welcome to the Prince Library"
           GridPane.columnIndex="0"

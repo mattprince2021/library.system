@@ -85,4 +85,122 @@
     <TextField GridPane.columnIndex="1"
                GridPane.rowIndex="7"/>
 
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="1"
+    >
+        <Button fx:id="addBookButton"
+                text="Add Book"
+                onAction="#addBookButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editBookButton"
+                text="Edit Book"
+                onAction="#editBookButtonAction"
+        />
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="10"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addMusicButton"
+                text="Add Music"
+                onAction="#addMusicButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="11"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addBoardgamesButton"
+                text="Add Boardgames"
+                onAction="#addBoardgamesButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="11"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editBoardgamesButton"
+                text="Edit Boardgames"
+                onAction="#editBoardgamesButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="12"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addFilmButton"
+                text="Add Film"
+                onAction="#addFilmButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="12"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editFilmButton"
+                text="Edit Film"
+                onAction="#editFilmButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="13"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addTableButton"
+                text="Add Table"
+                onAction="#addTableButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="13"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editTableButton"
+                text="Edit Table"
+                onAction="#editTableButtonAction"
+        />
+
+    </HBox>
+
+
+
+
 </GridPane>

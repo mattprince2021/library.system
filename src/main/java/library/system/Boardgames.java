@@ -66,16 +66,4 @@ public class Boardgames {
     public int getGamesQuantity() { return gamesQuantity; }
 
     public void setGamesQuantity(int gamesQuantity) { this.gamesQuantity = gamesQuantity; }
-
-//    public String getGamesInformation()
-//    {
-//        String gamesInformation = gamesTitle + "; ";
-//        gamesInformation += gamesAges + "; From ";
-//        gamesInformation += gamesMinPlayers + " to ";
-//        gamesInformation += gamesGenre + "; ";
-//        gamesInformation += gamesBarcode + "; ";
-//        gamesInformation += gamesQuantity + "; ";
-//        gamesInformation += gamesOverview;
-//        return gamesInformation;
-//    }
 }

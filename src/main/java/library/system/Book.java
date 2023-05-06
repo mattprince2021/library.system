@@ -1,61 +1,88 @@
 package library.system;
 
-public class Book {
-    //instance variables
+import jakarta.persistence.Entity;
+//import javax.persistence.*;
+import jakarta.persistence.Id;
 
-    private String bookTitle, bookAuthor, bookFormat, bookGenre, bookOverview, bookISBN,bookQuantity;
+@Entity
+public class Book
+{
+    private String bookTitle;
+    private String bookAuthor;
+    private String bookFormat;
+    private String bookGenre;
+    private String bookOverview;
+    private String bookISBN;
+    private int bookQty;
+    private int bookID;
 
-
-    //constructors
-
-    public Book(String bTitle, String bAuthor, String bFormat, String bGenre, String bOverview, String bISBN, String bQty)
+    @Id
+    public  int getBookID()
     {
-        bookTitle = bTitle;
-        bookAuthor = bAuthor;
-        bookFormat = bFormat;
-        bookGenre = bGenre;
-        bookOverview = bOverview;
-        bookISBN = bISBN;
-        bookQuantity = bQty;
+        return  bookID;
     }
 
-    //methods
+    public void setBookID(int bookID) {
+        this.bookID = bookID;
+    }
 
-    public String getBookTitle() { return bookTitle; }
-
-    public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
-
-    public String getBookAuthor() { return bookAuthor; }
-
-    public String getBookFormat() { return bookFormat; }
-
-    public String getBookGenre() { return bookGenre; }
-
-    public void setBookGenre(String bookGenre) { this.bookGenre = bookGenre; }
-
-    public String getBookOverview() { return bookOverview; }
-
-    public void setBookOverview(String bookOverview) { this.bookOverview = bookOverview; }
-
-    public String getBookISBN() {
+    public String getBookISBN()
+    {
         return bookISBN;
     }
 
-    public String getBookQuantity() {
-        return bookQuantity;
+    public void setBookISBN(String newISBN)
+    {
+        bookISBN = newISBN;
+    }
+    public String getBookTitle()
+    {
+        return bookTitle;
     }
 
-    public void setBookQuantity(String bookQuantity) { this.bookQuantity = bookQuantity; }
-
-    public String getBookInformation()
+    public void setBookTitle(String newBookTitle)
     {
-        String bookInformation = bookTitle + "; ";
-        bookInformation += bookAuthor + "; ";
-        bookInformation += bookFormat + "; ";
-        bookInformation += bookGenre + "; ";
-        bookInformation += bookISBN + "; ";
-        bookInformation += bookOverview + "; ";
-        bookInformation += bookQuantity + "; ";
-        return bookInformation;
+        this.bookTitle = newBookTitle;
+    }
+
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
+
+    public void setBookAuthor(String newBookAuthor) {
+        bookAuthor = newBookAuthor;
+    }
+    public String getbookFormat()
+    {
+        return bookFormat;
+    }
+
+    public void setBookFormat(String newBookFormat) {
+        bookFormat = newBookFormat;
+    }
+
+    public String getBookGenre() {
+        return bookGenre;
+    }
+
+    public void setBookGenre(String newBookGenre) {
+        this.bookGenre = newBookGenre;
+    }
+
+
+    public String getBookOverview() {
+        return bookOverview;
+    }
+
+    public void setBookOverview(String newBookOverview) {
+        this.bookOverview = newBookOverview;
+    }
+
+    public int getBookQty() {
+        return bookQty;
+    }
+
+    public void setBookQty(int newBookQty) {
+        bookQty = newBookQty;
     }
 }

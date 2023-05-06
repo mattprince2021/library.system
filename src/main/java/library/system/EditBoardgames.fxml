@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
-
-<?import javafx.geometry.Insets?>
-
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="library.system.EditBoardgamesController"
-          alignment="TOP_LEFT"
           hgap="10"
           vgap="10"
           stylesheets="@Login.css">
@@ -86,5 +80,119 @@
     <TextField GridPane.columnIndex="1"
                GridPane.rowIndex="7"/>
 
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="1"
+    >
+        <Button fx:id="addBookButton"
+                text="Add Book"
+                onAction="#addBookButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editBookButton"
+                text="Edit Book"
+                onAction="#editBookButtonAction"
+        />
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="10"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addMusicButton"
+                text="Add Music"
+                onAction="#addMusicButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="10"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editMusicButton"
+                text="Edit Music"
+                onAction="#editMusicButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="11"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addBoardgamesButton"
+                text="Add Boardgames"
+                onAction="#addBoardgamesButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="12"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addFilmButton"
+                text="Add Film"
+                onAction="#addFilmButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="12"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editFilmButton"
+                text="Edit Film"
+                onAction="#editFilmButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="13"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="addTableButton"
+                text="Add Table"
+                onAction="#addTableButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="13"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="editTableButton"
+                text="Edit Table"
+                onAction="#editTableButtonAction"
+        />
+
+    </HBox>
 
 </GridPane>

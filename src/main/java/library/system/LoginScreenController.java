@@ -26,11 +26,11 @@ public class LoginScreenController
 
         HomeScreenController homeScreenController = loader.getController();
 
-        Scene changedScene = new Scene(root, 994,697);
+        Scene changedSceneHome = new Scene(root, 994,697);
 
         Stage stage = (Stage) loginButton.getScene().getWindow();
 
-        stage.setScene(changedScene);
+        stage.setScene(changedSceneHome);
         stage.show();
 
     }
