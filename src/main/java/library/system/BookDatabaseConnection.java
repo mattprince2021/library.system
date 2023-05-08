@@ -4,7 +4,8 @@ import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import java.util.List;
-public class DatabaseConnection
+
+public class BookDatabaseConnection
 {
     static Session databaseSession = null;
     static SessionFactory sessionFactory = null;
@@ -17,11 +18,12 @@ public class DatabaseConnection
         databaseSession.getTransaction().commit();
         closeDBSession();
     }
+
     public static List<?> getBook(int bookID)
     {
         openDBSession();
-        Query query = databaseSession.createQuery("from Book where bookID = "+bookID);
-        List<?> list = query.list();
+        javax.management.Query query = (javax.management.Query) databaseSession.createQuery("from bookTable where bookID = "+bookID);
+        List<?> list = ((Query<?>) query).list();
         closeDBSession();
         return list;
     }

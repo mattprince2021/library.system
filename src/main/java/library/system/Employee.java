@@ -1,8 +1,7 @@
 package library.system;
 
-import jakarta.persistence.*;
-
-@Entity
+import jakarta.persistence.Id;
+@jakarta.persistence.Entity
 public class Employee
 {
     private int employeeID;

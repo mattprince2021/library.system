@@ -16,6 +16,13 @@
     -fx-background-color: linear-gradient(#61a2b1, #2A5058);
 }
 
+#submitbutton {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#EF59F4, #3515D5);
+}
+
 .button:hover {
     -fx-background-color: linear-gradient(#2A5058, #61a2b1);
 }
