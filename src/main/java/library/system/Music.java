@@ -1,71 +1,36 @@
 package library.system;
 
-public class Music {
+import javax.persistence.*;
+
+@Entity
+public class Music
+{
     //instance variable
-    private String musicTitle, musicArtist, musicFormat, musicGenre, musicOverview, musicBarcode, musicQuantity;
+    private int musicID;
+    private String musicTitle;
+    private String musicArtist;
+    private String musicFormat;
+    private String musicGenre;
+    private String musicOverview;
+    private String musicBarcode;
+    private int musicQuantity;
 
-    //constructor
-    public Music(String mTitle, String mArtist, String mFormat, String mGenre, String mOverview,
-                 String mBarcode, String mQuantity)
-    {
-        musicTitle = mTitle;
-        musicArtist = mArtist;
-        musicFormat = mFormat;
-        musicGenre = mGenre;
-        musicOverview = mOverview;
-        musicBarcode = mBarcode;
-        musicQuantity = mQuantity;
-    }
-
-    //methods
-
-    public String getMusicTitle() {
-        return musicTitle;
-    }
-
-    public void setMusicTitle(String musicTitle) { this.musicTitle = musicTitle; }
-
-    public String getMusicArtist() {
-        return musicArtist;
-    }
-
-    public String getMusicFormat() {
-        return musicFormat;
-    }
-
+    @Id
+    public int getMusicID(){return musicID;}
+    public void setMusicID(int newMusicID) {musicID = newMusicID;}
+    public String getMusicTitle() {return musicTitle;}
+    public void setMusicTitle(String newMusicTitle) { musicTitle = newMusicTitle; }
+    public String getMusicArtist() {return musicArtist;}
+    public void setMusicArtist(String newMusicArtist) { musicArtist = newMusicArtist;}
+    public String getMusicFormat() {return musicFormat;}
+    public void setMusicFormat(String newMusicFormat) {musicFormat = newMusicFormat;}
     public String getMusicGenre() { return musicGenre; }
+    public void setMusicGenre(String musicGenre) {this.musicGenre = musicGenre;}
+    public String getMusicBarcode() {return musicBarcode;}
+    public void setMusicBarcode(String newMusicBarcode) {musicBarcode = newMusicBarcode;}
+    public int getMusicQuantity() {return musicQuantity;}
+    public void setMusicQuantity(int newMusicQuantity) {musicQuantity = newMusicQuantity;}
+    public String getMusicOverview() {return musicOverview;}
+    public void setMusicOverview(String musicOverview) {this.musicOverview = musicOverview;}
 
-    public void setMusicGenre(String musicGenre) {
-        this.musicGenre = musicGenre;
-    }
-
-    public String getMusicBarcode() {
-        return musicBarcode;
-    }
-
-    public String getMusicQuantity() {
-        return musicQuantity;
-    }
-
-    public void setMusicQuantity() { this.musicQuantity = musicQuantity; }
-
-    public String getMusicOverview() {
-        return musicOverview;
-    }
-
-    public void setMusicOverview(String musicOverview) {
-        this.musicOverview = musicOverview;
-    }
-
-//    public String getMusicInformation()
-//    {
-//        String musicInformation = musicTitle + "; ";
-//        musicInformation += musicArtist + "; ";
-//        musicInformation += musicFormat + "; ";
-//        musicInformation += musicGenre + "; ";
-//        musicInformation += musicBarcode + "; ";
-//        musicInformation += musicQuantity + "; ";
-//        musicInformation += musicOverview;
-//        return musicInformation;
-//    }
 }

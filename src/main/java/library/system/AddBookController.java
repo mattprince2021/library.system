@@ -7,14 +7,56 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class AddBookController{
     @FXML private Label addBookMessage;
+    @FXML private Button editBookButton;
+    @FXML private Button addMusicButton;
+    @FXML private Button editMusicButton;
+    @FXML private Button addBoardgamesButton;
+    @FXML private Button editBoardgamesButton;
+    @FXML private Button addFilmButton;
+    @FXML private Button editFilmButton;
+    @FXML private Button addTableButton;
+    @FXML private Button editTableButton;
+    @FXML private TextField bookAuthorTextEntry;
+    @FXML private TextField bookTitleTextEntry;
+    @FXML private TextField bookGenreTextEntry;
+    @FXML private TextField bookFormatTextEntry;
+    @FXML private TextArea bookOverviewTextEntry;
+    @FXML private TextField bookISBNTextEntry;
+    @FXML private TextField bookQuantityTextEntry;
+    //@FXML private TextField bookIDTextEntry;
 
-    @FXML private Button editBookButton, addMusicButton, editMusicButton, addBoardgamesButton,
-            editBoardgamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
+
+
+    @FXML protected void addBookToDBButtonAction(ActionEvent event)
+    {
+        //int bookID = Integer.parseInt(bookIDTextEntry.getText());
+        Book bookToAdd = new Book();
+        bookToAdd.setBookISBN(bookISBNTextEntry.getText());
+        bookToAdd.setBookAuthor(bookAuthorTextEntry.getText());
+        bookToAdd.setBookFormat(bookFormatTextEntry.getText());
+        bookToAdd.setBookGenre(bookGenreTextEntry.getText());
+        bookToAdd.setBookTitle(bookTitleTextEntry.getText());
+        bookToAdd.setBookOverview(bookOverviewTextEntry.getText());
+        bookToAdd.setBookQuantity(Integer.parseInt(bookQuantityTextEntry.getText()));
+
+        BookDatabaseConnection.addBookToDatabase(bookToAdd);
+        //bookIDTextEntry.setText("");
+        bookISBNTextEntry.setText("");
+        bookAuthorTextEntry.setText("");
+        bookFormatTextEntry.setText("");
+        bookGenreTextEntry.setText("");
+        bookTitleTextEntry.setText("");
+        bookOverviewTextEntry.setText("");
+        bookQuantityTextEntry.setText("");
+    }
+
     @FXML
     protected void editBookButtonAction(ActionEvent event) throws Exception
     {

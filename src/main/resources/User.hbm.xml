@@ -3,10 +3,10 @@
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name = "library.system.User" table = "Employee">
-        <id name = "employeeID" column = "employeeid" type = "int"/>
+    <class name = "library.system.User" table = "user">
+        <id name = "employeeID" column = "employeeID" type = "int" />
         <property name = "name" column = "name" type = "string"/>
-        <property name = "gender" column = "gender" type = "string"/>
-        <property name = "deptNo" column = "departmentid" type = "int"/>
+        <property name = "passwordPIN" column = "passwordPIN" type = "string"/>
+        <property name = "supervisor" column = "supervisor" type = "boolean"/>
     </class>
 </hibernate-mapping>

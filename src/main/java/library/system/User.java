@@ -1,13 +1,13 @@
 package library.system;
 
-import jakarta.persistence.Id;
-@jakarta.persistence.Entity
-public class Employee
+import javax.persistence.*;
+@Entity
+public class User
 {
     private int employeeID;
     private String name;
-    private String gender;
-    private int deptNo;
+    private int passwordPIN;
+    private int supervisor;
 
     @Id
     public int getEmployeeID()
@@ -27,20 +27,20 @@ public class Employee
         name = newName;
     }
 
-    public String getGender()
+    public int getPasswordPIN()
     {
-        return gender;
+        return passwordPIN;
     }
-    public void setGender(String newGender)
+    public void setPasswordPIN(int newPasswordPIN)
     {
-        gender = newGender;
+        passwordPIN = newPasswordPIN;
     }
-    public int getDeptNo()
+    public int getSupervisor()
     {
-        return deptNo;
+        return supervisor;
     }
-    public void setDeptNo(int newDeptNo)
+    public void setSupervisor(int newSupervisor)
     {
-        deptNo = newDeptNo;
+        supervisor = newSupervisor;
     }
 }

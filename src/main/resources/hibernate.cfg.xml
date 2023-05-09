@@ -13,6 +13,12 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.transform_hbm_xml.enabled">true</property>
         <property name="current_session_context_class">thread</property>
-        <mapping resource = "Employee.hbm.xml"/>
+        <mapping resource = "Boardgames.hbm.xml"/>
+        <mapping resource = "Film.hbm.xml"/>
+        <mapping resource = "Music.hbm.xml"/>
+        <mapping resource = "Tables.hbm.xml"/>
+        <mapping resource = "User.hbm.xml"/>
+        <mapping resource = "Book.hbm.xml"/>
+
     </session-factory>
 </hibernate-configuration>

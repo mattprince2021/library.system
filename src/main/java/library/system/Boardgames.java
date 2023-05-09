@@ -55,6 +55,10 @@ public class Boardgames {
         return gamesBarcode;
     }
 
+    public void setGamesBarcode(String gamesBarcode) {
+        this.gamesBarcode = gamesBarcode;
+    }
+
     public String getGamesOverview() {
         return gamesOverview;
     }

@@ -22,7 +22,7 @@ public class BookDatabaseConnection
     public static List<?> getBook(int bookID)
     {
         openDBSession();
-        javax.management.Query query = (javax.management.Query) databaseSession.createQuery("from bookTable where bookID = "+bookID);
+        Query query = databaseSession.createQuery("from Book where bookID = "+bookID);
         List<?> list = ((Query<?>) query).list();
         closeDBSession();
         return list;
@@ -44,7 +44,7 @@ public class BookDatabaseConnection
     }
     private static int getNextID()
     {
-        Query query = databaseSession.createQuery("select max(employeeID) from Employee");
+        Query query = databaseSession.createQuery("select max(bookID) from Book");
         System.out.println( query.list().get(0));
         return (Integer) query.list().get(0)+1;
     }

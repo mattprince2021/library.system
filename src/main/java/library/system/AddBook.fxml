@@ -20,43 +20,58 @@
     <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
 
     <Text id="addBookMessage"
-          text="Add Book To Library"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="0"
-          GridPane.columnSpan="2"/>
+            text="Add Book To Library"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2"/>
 
-    <Label fx:id="addBook"
-           text="Author"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="1"
+    <Label text="Book ID"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="1"
+    />
+    <TextField fx:id="bookIDTextEntry"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="2"/>
+
+    <TextField fx:id="bookQuantityTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="7"/>
+
+    <Label text="Author"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="1"/>
+    <TextField fx:id="bookAuthorTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"/>
 
     <Label text="Title"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="2"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="2"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="2"/>
+    <TextField fx:id="bookTitleTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"/>
 
     <Label text="Genre"
            GridPane.columnIndex="0"
            GridPane.rowIndex="3"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="3"/>
+    <TextField fx:id="bookGenreTextEntry"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="3"/>
 
     <Label text="Format"
            GridPane.columnIndex="0"
            GridPane.rowIndex="4"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="4"/>
+    <TextField fx:id="bookFormatTextEntry"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="4"/>
 
     <Label text="Overview"
            GridPane.columnIndex="0"
@@ -64,9 +79,10 @@
            GridPane.valignment="TOP"
     />
 
-    <TextArea GridPane.columnIndex="1"
-              GridPane.rowIndex="5"
-              GridPane.hgrow="ALWAYS"
+    <TextArea fx:id="bookOverviewTextEntry"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="5"
+                GridPane.hgrow="ALWAYS"
     />
 
 
@@ -75,65 +91,79 @@
            GridPane.rowIndex="6"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="6"/>
+    <TextField fx:id="bookISBNTextEntry"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="6"/>
 
     <Label text="Quantity Available"
            GridPane.columnIndex="0"
            GridPane.rowIndex="7"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="7"/>
+    <TextField fx:id="bookQuantityTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="7"/>
 
+   <HBox spacing="10"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="9"
+            GridPane.columnSpan="1"
+    >
+
+    <Button fx:id="addBookToDBButton"
+            text="Submit Book"
+            onAction="#addBookToDBButtonAction"
+    />
+
+    </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="2"
-          GridPane.rowIndex="9"
-          GridPane.columnSpan="1"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="9"
+            GridPane.columnSpan="1"
     >
 
     <Button fx:id="editBookButton"
-                text="Edit Book"
-                onAction="#editBookButtonAction"
+            text="Edit Book"
+            onAction="#editBookButtonAction"
         />
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="10"
-          GridPane.columnSpan="1"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="10"
+            GridPane.columnSpan="1"
     >
 
         <Button fx:id="addMusicButton"
-                text="Add Music"
-                onAction="#addMusicButtonAction"
+            text="Add Music"
+            onAction="#addMusicButtonAction"
         />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="2"
-          GridPane.rowIndex="10"
-          GridPane.columnSpan="1"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="10"
+            GridPane.columnSpan="1"
     >
 
         <Button fx:id="editMusicButton"
-                text="Edit Music"
-                onAction="#editMusicButtonAction"
+            text="Edit Music"
+            onAction="#editMusicButtonAction"
         />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="11"
-          GridPane.columnSpan="1"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="11"
+            GridPane.columnSpan="1"
     >
 
         <Button fx:id="addBoardgamesButton"
-                text="Add Boardgames"
-                onAction="#addBoardgamesButtonAction"
+            text="Add Boardgames"
+            onAction="#addBoardgamesButtonAction"
         />
 
     </HBox>
