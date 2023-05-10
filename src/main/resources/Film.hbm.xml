@@ -4,12 +4,14 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name = "library.system.Film" table = "moviesTable">
-        <id name = "filmBarcode" column = "moviesBarcode" type = "string" />
-        <property name = "filmTitle" column = "moviesTitle" type = "string"/>
-        <property name = "filmStudio" column = "moviesStudio" type = "string"/>
-        <property name = "filmFormat" column = "moviesormat" type = "string"/>
-        <property name = "filmGenre" column = "moviesGenre" type = "string"/>
-        <property name = "filmOverview" column = "moviesOverview" type = "string"/>
-        <property name = "filmQuantity" column = "moviesQuantity" type = "string"/>
+        <id name = "filmID" column = "filmID" type = "int" />
+        <property name = "filmBarcode" column = "filmBarcode" type = "string"/>
+        <property name = "filmTitle" column = "filmTitle" type = "string"/>
+        <property name = "filmStudio" column = "filmStudio" type = "string"/>
+        <property name = "filmFormat" column = "filmFormat" type = "string"/>
+        <property name = "filmGenre" column = "filmGenre" type = "string"/>
+        <property name = "filmOverview" column = "filmOverview" type = "string"/>
+        <property name = "filmQuantity" column = "filmQuantity" type = "int"/>
+        <property name = "filmAge" column = "filmAge" type = "string"/>
     </class>
 </hibernate-mapping>

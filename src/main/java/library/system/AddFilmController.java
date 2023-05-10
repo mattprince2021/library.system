@@ -7,12 +7,51 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddFilmController {
     @FXML private Label addFilmMessage;
-    @FXML private Button addBookButton, editBookButton, addMusicButton, editMusicButton, addBoardgamesButton,
-            editBoardgamesButton, editFilmButton, addTableButton, editTableButton;
+    @FXML private Button addBookButton;
+    @FXML private Button editBookButton;
+    @FXML private Button addMusicButton;
+    @FXML private Button editMusicButton;
+    @FXML private Button addBoardgamesButton;
+    @FXML private Button editBoardgamesButton;
+    @FXML private Button editFilmButton;
+    @FXML private Button addTableButton;
+    @FXML private Button editTableButton;
+    @FXML private TextField filmBarcodeTextEntry;
+    @FXML private TextField filmStudioTextEntry;
+    @FXML private TextField filmFormatTextEntry;
+    @FXML private TextField filmGenreTextEntry;
+    @FXML private TextField filmTitleTextEntry;
+    @FXML private TextArea filmOverviewTextEntry;
+    @FXML private TextField filmQuantityTextEntry;
+    @FXML private TextField filmAgeTextEntry;
+    @FXML protected void addFilmToDBButtonAction(ActionEvent event)
+    {
+        Film filmToAdd = new Film();
+        filmToAdd.setFilmBarcode(filmBarcodeTextEntry.getText());
+        filmToAdd.setFilmStudio(filmStudioTextEntry.getText());
+        filmToAdd.setFilmFormat(filmFormatTextEntry.getText());
+        filmToAdd.setFilmGenre(filmGenreTextEntry.getText());
+        filmToAdd.setFilmAge(filmAgeTextEntry.getText());
+        filmToAdd.setFilmTitle(filmTitleTextEntry.getText());
+        filmToAdd.setFilmOverview(filmOverviewTextEntry.getText());
+        filmToAdd.setFilmQuantity(Integer.parseInt(filmQuantityTextEntry.getText()));
+
+        FilmDatabaseConnection.addFilmToDatabase(filmToAdd);
+        filmBarcodeTextEntry.setText("");
+        filmStudioTextEntry.setText("");
+        filmFormatTextEntry.setText("");
+        filmGenreTextEntry.setText("");
+        filmAgeTextEntry.setText("");
+        filmTitleTextEntry.setText("");
+        filmOverviewTextEntry.setText("");
+        filmQuantityTextEntry.setText("");
+    }
 
     @FXML
     protected void addBookButtonAction(ActionEvent event) throws Exception

@@ -30,7 +30,11 @@ public class Music
     public void setMusicBarcode(String newMusicBarcode) {musicBarcode = newMusicBarcode;}
     public int getMusicQuantity() {return musicQuantity;}
     public void setMusicQuantity(int newMusicQuantity) {musicQuantity = newMusicQuantity;}
+
+    public void setMusicQuantity() { this.musicQuantity = musicQuantity; }
+
     public String getMusicOverview() {return musicOverview;}
+
     public void setMusicOverview(String musicOverview) {this.musicOverview = musicOverview;}
 
 }

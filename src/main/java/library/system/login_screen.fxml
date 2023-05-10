@@ -36,7 +36,7 @@
            GridPane.columnIndex="0"
            GridPane.rowIndex="2"/>
 
-    <TextField fx:id="pinField"
+    <PasswordField fx:id="pinField"
                GridPane.columnIndex="1"
                GridPane.rowIndex="2"/>
 

@@ -7,12 +7,50 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddMusicController{
     @FXML private Label addMusicMessage;
-    @FXML private Button addBookButton, editBookButton, editMusicButton, addBoardgamesButton,
-            editBoardgamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
+    @FXML private Button addBookButton;
+    @FXML private Button editBookButton;
+    @FXML private Button editMusicButton;
+    @FXML private Button addBoardgamesButton;
+    @FXML private Button editBoardgamesButton;
+    @FXML private Button addFilmButton;
+    @FXML private Button editFilmButton;
+    @FXML private Button addTableButton;
+    @FXML private Button editTableButton;
+    @FXML private TextField musicArtistTextEntry;
+    @FXML private TextField musicTitleTextEntry;
+    @FXML private TextField musicGenreTextEntry;
+    @FXML private TextField musicFormatTextEntry;
+    @FXML private TextArea musicOverviewTextEntry;
+    @FXML private TextField musicBarcodeTextEntry;
+    @FXML private TextField musicQuantityTextEntry;
+
+    @FXML protected void addMusicToDBButtonAction(ActionEvent event)
+    {
+        Music musicToAdd = new Music();
+        musicToAdd.setMusicBarcode(musicBarcodeTextEntry.getText());
+        musicToAdd.setMusicArtist(musicArtistTextEntry.getText());
+        musicToAdd.setMusicFormat(musicFormatTextEntry.getText());
+        musicToAdd.setMusicGenre(musicGenreTextEntry.getText());
+        musicToAdd.setMusicTitle(musicTitleTextEntry.getText());
+        musicToAdd.setMusicOverview(musicOverviewTextEntry.getText());
+        musicToAdd.setMusicQuantity(Integer.parseInt(musicQuantityTextEntry.getText()));
+
+        MusicDatabaseConnection.addMusicToDatabase(musicToAdd);
+        musicBarcodeTextEntry.setText("");
+        musicArtistTextEntry.setText("");
+        musicFormatTextEntry.setText("");
+        musicGenreTextEntry.setText("");
+        musicTitleTextEntry.setText("");
+        musicOverviewTextEntry.setText("");
+        musicQuantityTextEntry.setText("");
+    }
+
 
     @FXML
     protected void addBookButtonAction(ActionEvent event) throws Exception

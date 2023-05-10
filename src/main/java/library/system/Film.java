@@ -13,6 +13,7 @@ public class Film
     private String filmOverview;
     private String filmBarcode;
     private int filmQuantity;
+    private String filmAge;
 
     @Id
     public int getFilmID() { return filmID;}
@@ -62,5 +63,8 @@ public class Film
     public int getFilmQuantity() { return filmQuantity; }
 
     public void setFilmQuantity(int newFilmQuantity) { filmQuantity = newFilmQuantity;}
+
+    public String getFilmAge(){ return filmAge;}
+    public void setFilmAge(String newFilmAge){ filmAge = newFilmAge;}
 }
 

@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Full Scene Switching working with buttons.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/DatabaseOutputController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" afterDir="false" />
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Successful Book Write to DB">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/StockItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Boardgames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Boardgames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Employee.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Employee.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Film.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Film.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Music.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Music.hbm.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -326,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683409107295</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Successful Book Write to DB">
+      <created>1683660551665</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683660551665</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +358,8 @@
     <MESSAGE value="Working Scene Changes" />
     <MESSAGE value="Correct Scenes" />
     <MESSAGE value="Full Scene Switching working with buttons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Full Scene Switching working with buttons." />
+    <MESSAGE value="Successful Book Write to DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful Book Write to DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

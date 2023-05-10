@@ -25,13 +25,13 @@
             GridPane.rowIndex="0"
             GridPane.columnSpan="2"/>
 
-    <Label text="Book ID"
-            GridPane.columnIndex="2"
-            GridPane.rowIndex="1"
-    />
-    <TextField fx:id="bookIDTextEntry"
-            GridPane.columnIndex="2"
-            GridPane.rowIndex="2"/>
+<!--     <Label text="Book ID" -->
+<!--             GridPane.columnIndex="2" -->
+<!--             GridPane.rowIndex="1" -->
+<!--     /> -->
+<!--     <TextField fx:id="bookIDTextEntry" -->
+<!--             GridPane.columnIndex="2" -->
+<!--             GridPane.rowIndex="2"/> -->
 
     <TextField fx:id="bookQuantityTextEntry"
             GridPane.columnIndex="1"
