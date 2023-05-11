@@ -9,14 +9,19 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class AddBoardgamesController {
-    @FXML private Label addBookMessage;
-
-
-    @FXML private Button addBookButton, editBookButton, addMusicButton, editMusicButton,
-            editBoardgamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
-    @FXML
-    protected void addBookButtonAction(ActionEvent event) throws Exception
+public class EditGamesController
+{
+    @FXML private Label editGamesMessage;
+    @FXML private Button addBookButton;
+    @FXML private Button editBookButton;
+    @FXML private Button addMusicButton;
+    @FXML private Button editMusicButton;
+    @FXML private Button addGamesButton;
+    @FXML private Button addFilmButton;
+    @FXML private Button editFilmButton;
+    @FXML private Button addTableButton;
+    @FXML private Button editTableButton;
+    @FXML protected void addBookButtonAction(ActionEvent event) throws Exception
     {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddBook.fxml"));
@@ -31,6 +36,7 @@ public class AddBoardgamesController {
         stage.setScene(addBookScene);
         stage.show();
     }
+
     @FXML
     protected void editBookButtonAction(ActionEvent event) throws Exception
     {
@@ -79,21 +85,20 @@ public class AddBoardgamesController {
         stage.setScene(editMusicScene);
         stage.show();
     }
-
     @FXML
-    protected void editBoardgamesButtonAction(ActionEvent event) throws Exception
+    protected void addGamesButtonAction(ActionEvent event) throws Exception
     {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddGames.fxml"));
         Parent root = loader.load();
 
-        EditBoardgamesController editBoardgamesController = loader.getController();
+        AddGamesController addGamesController = loader.getController();
 
-        Scene editBoardgamesScene = new Scene(root, 994,697);
+        Scene addGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) editBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) addGamesButton.getScene().getWindow();
 
-        stage.setScene(editBoardgamesScene);
+        stage.setScene(addGamesScene);
         stage.show();
     }
 
@@ -164,4 +169,6 @@ public class AddBoardgamesController {
     }
 
 
+
 }
+

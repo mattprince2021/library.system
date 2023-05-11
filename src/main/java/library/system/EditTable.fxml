@@ -114,9 +114,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="addBoardgamesButton"
-                text="Add Boardgames"
-                onAction="#addBoardgamesButtonAction"
+        <Button fx:id="addGamesButton"
+                text="Add Games"
+                onAction="#addGamesButtonAction"
         />
 
     </HBox>
@@ -127,9 +127,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="editBoardgamesButton"
-                text="Edit Boardgames"
-                onAction="#editBoardgamesButtonAction"
+        <Button fx:id="editGamesButton"
+                text="Edit Games"
+                onAction="#editGamesButtonAction"
         />
 
     </HBox>

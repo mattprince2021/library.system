@@ -98,6 +98,18 @@
     </HBox>
 
     <HBox spacing="10"
+          GridPane.columnIndex="2"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="1"
+    >
+        <Button fx:id="submitbutton"
+                text="Edit Book"
+                onAction="#editBookButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
           GridPane.columnIndex="1"
           GridPane.rowIndex="10"
           GridPane.columnSpan="1"
@@ -129,9 +141,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="addBoardgamesButton"
-                text="Add Boardgames"
-                onAction="#addBoardgamesButtonAction"
+        <Button fx:id="addGamesButton"
+                text="Add Games"
+                onAction="#addGamesButtonAction"
         />
 
     </HBox>
@@ -142,9 +154,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="editBoardgamesButton"
-                text="Edit Boardgames"
-                onAction="#editBoardgamesButtonAction"
+        <Button fx:id="editGamesButton"
+                text="Edit Games"
+                onAction="#editGamesButtonAction"
         />
 
     </HBox>

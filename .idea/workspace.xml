@@ -4,22 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Successful Book Write to DB">
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/StockItem.java" afterDir="false" />
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Successful Book,Music,Film Write to DB">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/TablesDatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBoardgames.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGames.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBoardgamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Film.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Film.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Music.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Music.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Boardgames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBoardgames.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditGames.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBoardgamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditGamesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Boardgames.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Games.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Tables.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Tables.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,8 +157,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.library.system [run]">
-    <configuration name="Main_OLD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="library.system.Main_OLD" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="library.system.Main" />
       <module name="library.system.main" />
       <extension name="coverage">
         <pattern>
@@ -153,8 +170,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="library.system.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="library.system.Main" />
+    <configuration name="library.system.Main_OLD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="library.system.Main_OLD" />
       <module name="library.system.main" />
       <extension name="coverage">
         <pattern>
@@ -333,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683660551665</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Successful Book,Music,Film Write to DB">
+      <created>1683740323647</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683740323647</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +383,8 @@
     <MESSAGE value="Correct Scenes" />
     <MESSAGE value="Full Scene Switching working with buttons." />
     <MESSAGE value="Successful Book Write to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successful Book Write to DB" />
+    <MESSAGE value="Successful Book,Music,Film Write to DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful Book,Music,Film Write to DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

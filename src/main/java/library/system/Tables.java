@@ -1,55 +1,29 @@
 package library.system;
-
+import javax.persistence.*;
+@Entity
 public class Tables {
 
     //instance variable
-    private String tablesNumber, tablesSize, tablesPlayers;
+    private int tablesID;
+    private String tablesSize;
+    private int tablesPlayers;
     private int tablesQuantity;
 
     //constructor
-    public Tables(String tTable, String tSize, String tPlayers, int tQuantity)
-    {
-        tablesNumber = tTable;
-        tablesSize = tSize;
-        tablesPlayers = tPlayers;
-        tablesQuantity = tQuantity;
-    }
-
-    //methods
-
-    public String getTablesNumber() { return tablesNumber; }
-
-    public void setTablesNumber(String tablesNumber) { this.tablesNumber = tablesNumber; }
-    public String getTablesNumbers() {
-        return tablesNumber;
-    }
-
+    @Id
+    public int getTablesID() { return tablesID; }
+    public void setTablesID(int newTablesID){tablesID = newTablesID;}
     public String getTablesSize() {
         return tablesSize;
     }
-
-    public void setTablesSize(String tablesSize) {
-        this.tablesSize = tablesSize;
+    public void setTablesSize(String newTablesSize) {
+        tablesSize = newTablesSize;
     }
 
-    public String getTablesPlayers() {
+    public int getTablesPlayers() {
         return tablesPlayers;
     }
-
-    public void setTablesPlayers(String tablesPlayers) {
-        this.tablesPlayers = tablesPlayers;
-    }
-
+    public void setTablesPlayers(int newTablesPlayers) {tablesPlayers = newTablesPlayers;}
     public int getTablesQuantity() {return tablesQuantity;}
-
-    public void setTablesQuantity(int tablesQuantity){ this.tablesQuantity = tablesQuantity;}
-
-//    public String getTablesInformation()
-//    {
-//        String tablesInformation = tablesNumber + "; ";
-//        tablesInformation += tablesSize + "; ";
-//        tablesInformation += tablesNumber + "; ";
-//        tablesInformation += tablesQuantity;
-//        return tablesInformation;
-//    }
+    public void setTablesQuantity(int newTablesQuantity){ tablesQuantity = newTablesQuantity;}
 }

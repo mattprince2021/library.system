@@ -7,14 +7,35 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddTableController {
     @FXML private Label addTableMessage;
+    @FXML private Button addBookButton;
+    @FXML private Button editBookButton;
+    @FXML private Button addMusicButton;
+    @FXML private Button editMusicButton;
+    @FXML private Button addGamesButton;
+    @FXML private Button editGamesButton;
+    @FXML private Button addFilmButton;
+    @FXML private Button editFilmButton;
+    @FXML private Button editTableButton;
+    @FXML private TextField tablesSizeTextEntry;
+    @FXML private TextField tablesPlayersTextEntry;
+    @FXML private TextField tablesQuantityTextEntry;
+    @FXML protected void addTableToDBButtonAction(ActionEvent event)
+    {
+        Tables tablesToAdd = new Tables();
+        tablesToAdd.setTablesSize(tablesSizeTextEntry.getText());
+        tablesToAdd.setTablesPlayers(Integer.parseInt(tablesPlayersTextEntry.getText()));
+        tablesToAdd.setTablesQuantity(Integer.parseInt(tablesQuantityTextEntry.getText()));
 
-    @FXML
-    private Button addBookButton, editBookButton, addMusicButton, editMusicButton, addBoardgamesButton,
-            editBoardgamesButton, addFilmButton, editFilmButton, editTableButton;
+        TablesDatabaseConnection.addTablesToDatabase(tablesToAdd);
+        tablesSizeTextEntry.setText("");
+        tablesPlayersTextEntry.setText("");
+        tablesQuantityTextEntry.setText("");
+    }
     @FXML
     protected void addBookButtonAction(ActionEvent event) throws Exception
     {
@@ -81,35 +102,35 @@ public class AddTableController {
         stage.show();
     }
     @FXML
-    protected void addBoardgamesButtonAction(ActionEvent event) throws Exception
+    protected void addGamesButtonAction(ActionEvent event) throws Exception
     {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddGames.fxml"));
         Parent root = loader.load();
 
-        AddBoardgamesController addBoardgamesController = loader.getController();
+        AddGamesController addGamesController = loader.getController();
 
-        Scene addBoardgamesScene = new Scene(root, 994,697);
+        Scene addGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) addBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) addGamesButton.getScene().getWindow();
 
-        stage.setScene(addBoardgamesScene);
+        stage.setScene(addGamesScene);
         stage.show();
     }
     @FXML
-    protected void editBoardgamesButtonAction(ActionEvent event) throws Exception
+    protected void editGamesButtonAction(ActionEvent event) throws Exception
     {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditGames.fxml"));
         Parent root = loader.load();
 
-        EditBoardgamesController editBoardgamesController = loader.getController();
+        EditGamesController editGamesController = loader.getController();
 
-        Scene editBoardgamesScene = new Scene(root, 994,697);
+        Scene editGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) editBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) editGamesButton.getScene().getWindow();
 
-        stage.setScene(editBoardgamesScene);
+        stage.setScene(editGamesScene);
         stage.show();
     }
 
@@ -149,7 +170,6 @@ public class AddTableController {
     @FXML
     protected void editTableButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditTable.fxml"));
         Parent root = loader.load();
 

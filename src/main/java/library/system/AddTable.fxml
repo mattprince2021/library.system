@@ -25,21 +25,13 @@
           GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label fx:id="addTable"
-           text="Table Number"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="1"
-    />
-
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="1"/>
-
     <Label text="Table Size"
            GridPane.columnIndex="0"
            GridPane.rowIndex="2"
     />
 
-    <TextField GridPane.columnIndex="1"
+    <TextField fx:id="tablesSizeTextEntry"
+            GridPane.columnIndex="1"
                GridPane.rowIndex="2"/>
 
     <Label text="Number of Players"
@@ -47,7 +39,8 @@
            GridPane.rowIndex="3"
     />
 
-    <TextField GridPane.columnIndex="1"
+    <TextField fx:id="tablesPlayersTextEntry"
+        GridPane.columnIndex="1"
                GridPane.rowIndex="3"/>
 
     <Label text="Quantity Available"
@@ -55,7 +48,8 @@
            GridPane.rowIndex="4"
     />
 
-    <TextField GridPane.columnIndex="1"
+    <TextField fx:id="tablesQuantityTextEntry"
+        GridPane.columnIndex="1"
                GridPane.rowIndex="4"/>
 
     <HBox spacing="10"
@@ -114,9 +108,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="addBoardgamesButton"
-                text="Add Boardgames"
-                onAction="#addBoardgamesButtonAction"
+        <Button fx:id="addGamesButton"
+                text="Add Games"
+                onAction="#addGamesButtonAction"
         />
 
     </HBox>
@@ -127,9 +121,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="editBoardgamesButton"
-                text="Edit Boardgames"
-                onAction="#editBoardgamesButtonAction"
+        <Button fx:id="editGamesButton"
+                text="Edit Games"
+                onAction="#editGamesButtonAction"
         />
 
     </HBox>
@@ -156,6 +150,19 @@
         <Button fx:id="editFilmButton"
                 text="Edit Film"
                 onAction="#editFilmButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="13"
+          GridPane.columnSpan="1"
+    >
+
+        <Button fx:id="submitbutton"
+                text="Submit Table"
+                onAction="#addTableToDBButtonAction"
         />
 
     </HBox>

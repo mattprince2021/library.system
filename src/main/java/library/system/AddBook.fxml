@@ -25,18 +25,6 @@
             GridPane.rowIndex="0"
             GridPane.columnSpan="2"/>
 
-<!--     <Label text="Book ID" -->
-<!--             GridPane.columnIndex="2" -->
-<!--             GridPane.rowIndex="1" -->
-<!--     /> -->
-<!--     <TextField fx:id="bookIDTextEntry" -->
-<!--             GridPane.columnIndex="2" -->
-<!--             GridPane.rowIndex="2"/> -->
-
-    <TextField fx:id="bookQuantityTextEntry"
-            GridPane.columnIndex="1"
-            GridPane.rowIndex="7"/>
-
     <Label text="Author"
             GridPane.columnIndex="0"
             GridPane.rowIndex="1"
@@ -85,7 +73,6 @@
                 GridPane.hgrow="ALWAYS"
     />
 
-
     <Label text="ISBN"
            GridPane.columnIndex="0"
            GridPane.rowIndex="6"
@@ -110,7 +97,7 @@
             GridPane.columnSpan="1"
     >
 
-    <Button fx:id="addBookToDBButton"
+    <Button fx:id="submitbutton"
             text="Submit Book"
             onAction="#addBookToDBButtonAction"
     />
@@ -152,7 +139,6 @@
             text="Edit Music"
             onAction="#editMusicButtonAction"
         />
-
     </HBox>
 
     <HBox spacing="10"
@@ -161,9 +147,9 @@
             GridPane.columnSpan="1"
     >
 
-        <Button fx:id="addBoardgamesButton"
-            text="Add Boardgames"
-            onAction="#addBoardgamesButtonAction"
+        <Button fx:id="addGamesButton"
+            text="Add Games"
+            onAction="#addGamesButtonAction"
         />
 
     </HBox>
@@ -174,9 +160,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="editBoardgamesButton"
-                text="Edit Boardgames"
-                onAction="#editBoardgamesButtonAction"
+        <Button fx:id="editGamesButton"
+                text="Edit Games"
+                onAction="#editGamesButtonAction"
         />
 
     </HBox>

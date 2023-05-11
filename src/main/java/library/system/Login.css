@@ -87,13 +87,13 @@
     -fx-fill: #818181;
 }
 
-#addBoardgamesMessage{
+#addGamesMessage{
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#editBoardgamesMessage{
+#editGamesMessage{
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;

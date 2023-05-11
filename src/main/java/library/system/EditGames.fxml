@@ -6,20 +6,20 @@
 <?import javafx.scene.text.Text?>
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="library.system.EditBoardgamesController"
+          fx:controller="library.system.EditGamesController"
           hgap="10"
           vgap="10"
           stylesheets="@Login.css">
 
     <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
 
-    <Text id="editBoardgamesMessage"
-          text="Edit Boardgames In Library"
+    <Text id="editGamesMessage"
+          text="Edit Games In Library"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label fx:id="editBoardgames"
+    <Label fx:id="editGames"
            text="Author"
            GridPane.columnIndex="0"
            GridPane.rowIndex="1"
@@ -136,9 +136,9 @@
           GridPane.columnSpan="1"
     >
 
-        <Button fx:id="addBoardgamesButton"
-                text="Add Boardgames"
-                onAction="#addBoardgamesButtonAction"
+        <Button fx:id="addGamesButton"
+                text="Add Games"
+                onAction="#addGamesButtonAction"
         />
 
     </HBox>

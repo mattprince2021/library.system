@@ -11,7 +11,7 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="library.system.AddBoardgamesController"
+          fx:controller="library.system.AddGamesController"
           alignment="TOP_LEFT"
           hgap="10"
           vgap="10"
@@ -19,35 +19,37 @@
 
     <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
 
-    <Text id="addBoardgamesMessage"
-          text="Add Boardgames to Library"
+    <Text id="addGamesMessage"
+          text="Add Games to Library"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label fx:id="addBoardgames"
-           text="Title"
+    <Label text="Title"
            GridPane.columnIndex="0"
            GridPane.rowIndex="1"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="1"/>
+    <TextField fx:id="gamesTitleTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"/>
 
     <Label text="Genre"
            GridPane.columnIndex="0"
            GridPane.rowIndex="2"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="2"/>
+    <TextField fx:id="gamesGenreTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"/>
 
     <Label text="Ages"
            GridPane.columnIndex="0"
            GridPane.rowIndex="3"
     />
 
-    <TextField GridPane.columnIndex="1"
+    <TextField fx:id="gamesAgesTextEntry"
+            GridPane.columnIndex="1"
                GridPane.rowIndex="3"/>
 
     <Label text="Min Players"
@@ -55,8 +57,9 @@
            GridPane.rowIndex="4"
     />
 
-    <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="4"/>
+    <TextField fx:id="gamesMinPlayersTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="4"/>
 
     <Label text="Overview"
            GridPane.columnIndex="0"
@@ -64,18 +67,19 @@
            GridPane.valignment="TOP"
     />
 
-    <TextArea GridPane.columnIndex="1"
-              GridPane.rowIndex="5"
-              GridPane.hgrow="ALWAYS"
+    <TextArea fx:id="gamesOverviewTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="5"
+            GridPane.hgrow="ALWAYS"
     />
-
 
     <Label text="Barcode"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="6"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="6"
     />
 
-    <TextField GridPane.columnIndex="1"
+    <TextField fx:id="gamesBarcodeTextEntry"
+            GridPane.columnIndex="1"
                GridPane.rowIndex="6"/>
 
     <Label text="Quantity Available"
@@ -83,7 +87,8 @@
            GridPane.rowIndex="7"
     />
 
-    <TextField GridPane.columnIndex="1"
+    <TextField fx:id="gamesQuantityTextEntry"
+            GridPane.columnIndex="1"
                GridPane.rowIndex="7"/>
 
     <HBox spacing="10"
@@ -94,8 +99,7 @@
 
     <Button fx:id="addBookButton"
             text="Add Book"
-            onAction="#addBookButtonAction"
-    />
+            onAction="#addBookButtonAction"/>
 
     </HBox>
 
@@ -136,14 +140,27 @@
     </HBox>
 
     <HBox spacing="10"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="11"
+          GridPane.columnSpan="1"
+    >
+
+    <Button fx:id="submitbutton"
+            text="Submit Games"
+            onAction="#addGamesToDBButtonAction"
+    />
+
+    </HBox>
+
+    <HBox spacing="10"
           GridPane.columnIndex="2"
           GridPane.rowIndex="11"
           GridPane.columnSpan="1"
     >
 
-    <Button fx:id="editBoardgamesButton"
-            text="Edit Boardgames"
-            onAction="#editBoardgamesButtonAction"
+    <Button fx:id="editGamesButton"
+            text="Edit Games"
+            onAction="#editGamesButtonAction"
     />
 
     </HBox>
@@ -199,6 +216,4 @@
     />
 
     </HBox>
-
-
 </GridPane>

@@ -12,11 +12,17 @@ import javafx.stage.Stage;
 public class HomeScreenController
 {
     @FXML private Label welcomeMessage;
-
-    @FXML private Button addBookButton, editBookButton, addMusicButton, editMusicButton, addBoardgamesButton,
-            editBoardgamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
-    @FXML
-    protected void addBookButtonAction(ActionEvent event) throws Exception
+    @FXML private Button addBookButton;
+    @FXML private Button editBookButton;
+    @FXML private Button addMusicButton;
+    @FXML private Button editMusicButton;
+    @FXML private Button addGamesButton;
+    @FXML private Button editGamesButton;
+    @FXML private Button addFilmButton;
+    @FXML private Button editFilmButton;
+    @FXML private Button addTableButton;
+    @FXML private Button editTableButton;
+    @FXML protected void addBookButtonAction(ActionEvent event) throws Exception
     {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddBook.fxml"));
@@ -31,8 +37,7 @@ public class HomeScreenController
         stage.setScene(addBookScene);
         stage.show();
     }
-    @FXML
-    protected void editBookButtonAction(ActionEvent event) throws Exception
+    @FXML protected void editBookButtonAction(ActionEvent event) throws Exception
     {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditBook.fxml"));
@@ -47,10 +52,8 @@ public class HomeScreenController
         stage.setScene(editBookScene);
         stage.show();
     }
-    @FXML
-    protected void addMusicButtonAction(ActionEvent event) throws Exception
+    @FXML protected void addMusicButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddMusic.fxml"));
         Parent root = loader.load();
 
@@ -63,10 +66,8 @@ public class HomeScreenController
         stage.setScene(addMusicScene);
         stage.show();
     }
-    @FXML
-    protected void editMusicButtonAction(ActionEvent event) throws Exception
+    @FXML protected void editMusicButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditMusic.fxml"));
         Parent root = loader.load();
 
@@ -79,43 +80,36 @@ public class HomeScreenController
         stage.setScene(editMusicScene);
         stage.show();
     }
-    @FXML
-    protected void addBoardgamesButtonAction(ActionEvent event) throws Exception
+    @FXML protected void addGamesButtonAction(ActionEvent event) throws Exception
     {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddGames.fxml"));
         Parent root = loader.load();
 
-        AddBoardgamesController addBoardgamesController = loader.getController();
+        AddGamesController addGamesController = loader.getController();
 
-        Scene addBoardgamesScene = new Scene(root, 994,697);
+        Scene addGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) addBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) addGamesButton.getScene().getWindow();
 
-        stage.setScene(addBoardgamesScene);
+        stage.setScene(addGamesScene);
         stage.show();
     }
-    @FXML
-    protected void editBoardgamesButtonAction(ActionEvent event) throws Exception
+    @FXML protected void editGamesButtonAction(ActionEvent event) throws Exception
     {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditGames.fxml"));
         Parent root = loader.load();
 
-        EditBoardgamesController editBoardgamesController = loader.getController();
+        EditGamesController editGamesController = loader.getController();
 
-        Scene editBoardgamesScene = new Scene(root, 994,697);
+        Scene editGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) editBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) editGamesButton.getScene().getWindow();
 
-        stage.setScene(editBoardgamesScene);
+        stage.setScene(editGamesScene);
         stage.show();
     }
-
-    @FXML
-    protected void addFilmButtonAction(ActionEvent event) throws Exception
+    @FXML protected void addFilmButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddFilm.fxml"));
         Parent root = loader.load();
 
@@ -128,10 +122,8 @@ public class HomeScreenController
         stage.setScene(addFilmScene);
         stage.show();
     }
-    @FXML
-    protected void editFilmButtonAction(ActionEvent event) throws Exception
+    @FXML protected void editFilmButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditFilm.fxml"));
         Parent root = loader.load();
 
@@ -145,10 +137,8 @@ public class HomeScreenController
         stage.show();
     }
 
-    @FXML
-    protected void addTableButtonAction(ActionEvent event) throws Exception
+    @FXML protected void addTableButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddTable.fxml"));
         Parent root = loader.load();
 
@@ -161,10 +151,8 @@ public class HomeScreenController
         stage.setScene(addTableScene);
         stage.show();
     }
-    @FXML
-    protected void editTableButtonAction(ActionEvent event) throws Exception
+    @FXML protected void editTableButtonAction(ActionEvent event) throws Exception
     {
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditTable.fxml"));
         Parent root = loader.load();
 

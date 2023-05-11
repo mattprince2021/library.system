@@ -7,7 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class EditMusicController{
@@ -15,8 +14,8 @@ public class EditMusicController{
 
 
     @FXML
-    private Button addBookButton, editBookButton, addMusicButton, editMusicButton, addBoardgamesButton,
-            editBoardgamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
+    private Button addBookButton, editBookButton, addMusicButton, editMusicButton, addGamesButton,
+            editGamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
     @FXML
     protected void addBookButtonAction(ActionEvent event) throws Exception
     {
@@ -68,35 +67,35 @@ public class EditMusicController{
     }
 
     @FXML
-    protected void addBoardgamesButtonAction(ActionEvent event) throws Exception
+    protected void addGamesButtonAction(ActionEvent event) throws Exception
     {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddGames.fxml"));
         Parent root = loader.load();
 
-        AddBoardgamesController addBoardgamesController = loader.getController();
+        AddGamesController addGamesController = loader.getController();
 
-        Scene addBoardgamesScene = new Scene(root, 994,697);
+        Scene addGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) addBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) addGamesButton.getScene().getWindow();
 
-        stage.setScene(addBoardgamesScene);
+        stage.setScene(addGamesScene);
         stage.show();
     }
     @FXML
-    protected void editBoardgamesButtonAction(ActionEvent event) throws Exception
+    protected void editGamesButtonAction(ActionEvent event) throws Exception
     {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditBoardgames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditGames.fxml"));
         Parent root = loader.load();
 
-        EditBoardgamesController editBoardgamesController = loader.getController();
+        EditGamesController editGamesController = loader.getController();
 
-        Scene editBoardgamesScene = new Scene(root, 994,697);
+        Scene editGamesScene = new Scene(root, 994,697);
 
-        Stage stage = (Stage) editBoardgamesButton.getScene().getWindow();
+        Stage stage = (Stage) editGamesButton.getScene().getWindow();
 
-        stage.setScene(editBoardgamesScene);
+        stage.setScene(editGamesScene);
         stage.show();
     }
 

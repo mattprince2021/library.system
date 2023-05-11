@@ -4,9 +4,9 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name = "library.system.Tables" table = "tablesTable">
-        <id name = "tablesNumber" column = "tablesNumber" type = "string" />
+        <id name = "tablesID" column = "tablesID" type = "int" />
         <property name = "tablesSize" column = "tablesSize" type = "string"/>
-        <property name = "tablesPlayers" column = "tablesPlayers" type = "string"/>
+        <property name = "tablesPlayers" column = "tablesPlayers" type = "int"/>
         <property name = "tablesQuantity" column = "tablesQuantity" type = "int"/>
     </class>
 </hibernate-mapping>
