@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="All functions write to DB">
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Reworked Buttons for simplicity and Navigation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddGames.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGames.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +237,7 @@
       <updated>1682693722039</updated>
       <workItem from="1682693723405" duration="39652000" />
       <workItem from="1683455640423" duration="7153000" />
-      <workItem from="1683897170536" duration="2517000" />
+      <workItem from="1683897170536" duration="4091000" />
     </task>
     <task id="LOCAL-00001" summary="initial classes">
       <created>1682696097348</created>
@@ -343,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683798740959</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="All functions write to DB">
+      <created>1683901515350</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683901515350</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Reworked Buttons for simplicity and Navigation">
+      <created>1683901540293</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683901540293</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +379,8 @@
     <MESSAGE value="Successful Book Write to DB" />
     <MESSAGE value="Successful Book,Music,Film Write to DB" />
     <MESSAGE value="All functions write to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="All functions write to DB" />
+    <MESSAGE value="Reworked Buttons for simplicity and Navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked Buttons for simplicity and Navigation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

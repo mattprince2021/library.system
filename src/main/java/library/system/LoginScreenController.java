@@ -10,13 +10,20 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.sql.Statement;
+
 public class LoginScreenController
 {
     @FXML private Text actionTarget;
     @FXML private Button loginButton;
+    @FXML private Button cancelLoginButton;
 
     @FXML private TextField userNameEntry;
-
+    @FXML protected void cancelLoginButtonAction(ActionEvent event) throws Exception
+    {
+        Stage stage = (Stage) cancelLoginButton.getScene().getWindow();
+        stage.close();
+    }
     @FXML
     protected void loginButtonAction(ActionEvent event) throws Exception
     {

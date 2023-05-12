@@ -22,6 +22,7 @@ public class HomeScreenController
     @FXML private Button editFilmButton;
     @FXML private Button addTableButton;
     @FXML private Button editTableButton;
+    @FXML private Button logoutButton;
     @FXML protected void addBookButtonAction(ActionEvent event) throws Exception
     {
 
@@ -164,5 +165,10 @@ public class HomeScreenController
 
         stage.setScene(editTableScene);
         stage.show();
+    }
+    @FXML protected void logoutButtonAction(ActionEvent event) throws Exception
+    {
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();
     }
 }

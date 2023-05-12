@@ -46,8 +46,24 @@
           GridPane.rowIndex="4">
 
         <Button fx:id="loginButton"
+                prefWidth="200"
+                prefHeight="60"
                 text="Sign In"
                 onAction="#loginButtonAction"
+        />
+
+    </HBox>
+
+    <HBox spacing="10"
+          alignment="BOTTOM_RIGHT"
+          GridPane.columnIndex="1"
+          GridPane.rowIndex="5">
+
+        <Button fx:id="cancelLoginButton"
+                prefWidth="200"
+                prefHeight="60"
+                text="Cancel Login"
+                onAction="#cancelLoginButtonAction"
         />
 
     </HBox>
