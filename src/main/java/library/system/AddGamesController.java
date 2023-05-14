@@ -11,20 +11,30 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class AddGamesController {
-    @FXML private Label addGamesMessage;
-    @FXML private Button homeScreenButton;
-    @FXML private TextField gamesBarcodeTextEntry;
-    @FXML private TextField gamesTitleTextEntry;
-    @FXML private TextField gamesAgesTextEntry;
-    @FXML private TextField gamesMinPlayersTextEntry;
-    @FXML private TextField gamesGenreTextEntry;
-    @FXML private TextArea gamesOverviewTextEntry;
-    @FXML private TextField gamesQuantityTextEntry;
-    @FXML protected void addGamesToDBButtonAction(ActionEvent event)
-    {
+    @FXML
+    private Label addGamesMessage;
+    @FXML
+    private Button homeScreenButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private TextField gamesBarcodeTextEntry;
+    @FXML
+    private TextField gamesTitleTextEntry;
+    @FXML
+    private TextField gamesAgesTextEntry;
+    @FXML
+    private TextField gamesMinPlayersTextEntry;
+    @FXML
+    private TextField gamesGenreTextEntry;
+    @FXML
+    private TextArea gamesOverviewTextEntry;
+    @FXML
+    private TextField gamesQuantityTextEntry;
+
+    @FXML
+    protected void addGamesToDBButtonAction(ActionEvent event) {
         Games gamesToAdd = new Games();
         gamesToAdd.setGamesBarcode(gamesBarcodeTextEntry.getText());
         gamesToAdd.setGamesTitle(gamesTitleTextEntry.getText());
@@ -43,16 +53,16 @@ public class AddGamesController {
         gamesOverviewTextEntry.setText("");
         gamesQuantityTextEntry.setText("");
     }
+
     @FXML
-    protected void homeScreenButtonAction(ActionEvent event) throws Exception
-    {
+    protected void homeScreenButtonAction(ActionEvent event) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
         Parent root = loader.load();
 
         HomeScreenController homeScreenController = loader.getController();
 
-        Scene changedSceneHome = new Scene(root, 994,697);
+        Scene changedSceneHome = new Scene(root, 994, 697);
 
         Stage stage = (Stage) homeScreenButton.getScene().getWindow();
 
@@ -61,5 +71,10 @@ public class AddGamesController {
 
     }
 
+    @FXML
+    protected void logoutButtonAction(ActionEvent event) throws Exception {
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();
+    }
 
 }

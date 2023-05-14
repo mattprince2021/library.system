@@ -1,46 +1,54 @@
 package library.system;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 @Entity
-public class User
-{
-    private int employeeID;
-    private String name;
-    private int passwordPIN;
-    private int supervisor;
+public class User {
+    private int userID;
+    private String firstName;
+    private String lastName;
+    private String passwordPIN;
+    private String supervisor;
 
     @Id
-    public int getEmployeeID()
-    {
-        return employeeID;
-    }
-    public void setEmployeeID(int newID)
-    {
-        employeeID = newID;
-    }
-    public String getName()
-    {
-        return name;
-    }
-    public void setName(String newName)
-    {
-        name = newName;
+    public int getUserID() {
+        return userID;
     }
 
-    public int getPasswordPIN()
-    {
+    public void setUserID(int newID) {
+        userID = newID;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String newFirstName) {
+        firstName = newFirstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String newLastName) {
+        lastName = newLastName;
+    }
+
+    public String getPasswordPIN() {
         return passwordPIN;
     }
-    public void setPasswordPIN(int newPasswordPIN)
-    {
+
+    public void setPasswordPIN(String newPasswordPIN) {
         passwordPIN = newPasswordPIN;
     }
-    public int getSupervisor()
-    {
+
+    public String getSupervisor() {
         return supervisor;
     }
-    public void setSupervisor(int newSupervisor)
-    {
+
+    public void setSupervisor(String newSupervisor) {
         supervisor = newSupervisor;
     }
 }

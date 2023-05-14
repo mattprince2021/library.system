@@ -5,7 +5,7 @@
 <hibernate-mapping>
     <class name = "library.system.Book" table = "bookTable">
         <id name = "bookID" column = "bookID" type = "int" />
-        <property name="bookISBN" column="bookISBN" type="string"/>
+        <property name = "bookISBN" column="bookISBN" type="string"/>
         <property name = "bookTitle" column = "bookTitle" type = "string"/>
         <property name = "bookAuthor" column = "bookAuthor" type = "string"/>
         <property name = "bookFormat" column = "bookFormat" type = "string"/>

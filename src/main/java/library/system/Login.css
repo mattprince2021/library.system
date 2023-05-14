@@ -1,4 +1,4 @@
-.root{
+.root {
     -fx-background-image: url("BookBackground.jpeg");
     -fx-background-size: cover;
 }
@@ -30,70 +30,70 @@
 #welcome-text {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
-    -fx-fill: #818181;
+    -fx-fill: #000000;
 }
 
 #actionTarget {
     -fx-fill: FIREBRICK;
     -fx-font-weight: bold;
-    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
 }
 
-#addBookMessage{
+#addBookMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#editBookMessage{
+#editBookMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#addMusicMessage{
+#addMusicMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#editMusicMessage{
+#editMusicMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#addFilmMessage{
+#addFilmMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#editFilmMessage{
+#editFilmMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#addTableMessage{
+#addTableMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#editTableMessage{
+#editTableMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#addGamesMessage{
+#addGamesMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;
 }
 
-#editGamesMessage{
+#editGamesMessage {
     -fx-font-size: 24px;
     -fx-font-family: "Tahoma";
     -fx-fill: #818181;

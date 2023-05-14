@@ -1,4 +1,5 @@
 package library.system;
+
 import javafx.geometry.Insets;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Dialog;
@@ -10,11 +11,7 @@ import java.util.Optional;
 
 public class AddBook {
 
-    private String result;
-
-    public String getResult() {
-        return this.result;
-    }
+    private final String result;
 
     public AddBook() {
         Dialog<String> dialog = new Dialog<>();
@@ -27,7 +24,7 @@ public class AddBook {
         GridPane grid = new GridPane();
         grid.setHgap(10);
         grid.setVgap(10);
-        grid.setPadding(new Insets(20,150,10,10));
+        grid.setPadding(new Insets(20, 150, 10, 10));
 
         TextField author = new TextField();
         author.setPromptText("Author");
@@ -71,9 +68,12 @@ public class AddBook {
         });
 
         Optional<String> result = dialog.showAndWait();
-        if (result.isPresent() ) {
+        if (result.isPresent()) {
             this.result = result.get();
-        }
-        else this.result = null;
+        } else this.result = null;
+    }
+
+    public String getResult() {
+        return this.result;
     }
 }

@@ -11,19 +11,36 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class AddMusicController{
-    @FXML private Label addMusicMessage;
-    @FXML private Button homeScreenButton;
-    @FXML private TextField musicArtistTextEntry;
-    @FXML private TextField musicTitleTextEntry;
-    @FXML private TextField musicGenreTextEntry;
-    @FXML private TextField musicFormatTextEntry;
-    @FXML private TextArea musicOverviewTextEntry;
-    @FXML private TextField musicBarcodeTextEntry;
-    @FXML private TextField musicQuantityTextEntry;
+public class AddMusicController {
+    @FXML
+    private Label addMusicMessage;
+    @FXML
+    private Button homeScreenButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private TextField musicArtistTextEntry;
+    @FXML
+    private TextField musicTitleTextEntry;
+    @FXML
+    private TextField musicGenreTextEntry;
+    @FXML
+    private TextField musicFormatTextEntry;
+    @FXML
+    private TextArea musicOverviewTextEntry;
+    @FXML
+    private TextField musicBarcodeTextEntry;
+    @FXML
+    private TextField musicQuantityTextEntry;
 
-    @FXML protected void addMusicToDBButtonAction(ActionEvent event)
-    {
+    @FXML
+    protected void logoutButtonAction(ActionEvent event) throws Exception {
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    protected void addMusicToDBButtonAction(ActionEvent event) {
         Music musicToAdd = new Music();
         musicToAdd.setMusicBarcode(musicBarcodeTextEntry.getText());
         musicToAdd.setMusicArtist(musicArtistTextEntry.getText());
@@ -45,15 +62,14 @@ public class AddMusicController{
 
 
     @FXML
-    protected void homeScreenButtonAction(ActionEvent event) throws Exception
-    {
+    protected void homeScreenButtonAction(ActionEvent event) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
         Parent root = loader.load();
 
         HomeScreenController homeScreenController = loader.getController();
 
-        Scene changedSceneHome = new Scene(root, 994,697);
+        Scene changedSceneHome = new Scene(root, 994, 697);
 
         Stage stage = (Stage) homeScreenButton.getScene().getWindow();
 

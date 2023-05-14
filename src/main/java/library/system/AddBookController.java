@@ -11,18 +11,36 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class AddBookController{
-    @FXML private Label addBookMessage;
-    @FXML private Button homeScreenButton;
-    @FXML private TextField bookAuthorTextEntry;
-    @FXML private TextField bookTitleTextEntry;
-    @FXML private TextField bookGenreTextEntry;
-    @FXML private TextField bookFormatTextEntry;
-    @FXML private TextArea bookOverviewTextEntry;
-    @FXML private TextField bookISBNTextEntry;
-    @FXML private TextField bookQuantityTextEntry;
-    @FXML protected void addBookToDBButtonAction(ActionEvent event)
-    {
+public class AddBookController {
+    @FXML
+    private Label addBookMessage;
+    @FXML
+    private Button homeScreenButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private TextField bookAuthorTextEntry;
+    @FXML
+    private TextField bookTitleTextEntry;
+    @FXML
+    private TextField bookGenreTextEntry;
+    @FXML
+    private TextField bookFormatTextEntry;
+    @FXML
+    private TextArea bookOverviewTextEntry;
+    @FXML
+    private TextField bookISBNTextEntry;
+    @FXML
+    private TextField bookQuantityTextEntry;
+
+    @FXML
+    protected void logoutButtonAction(ActionEvent event) throws Exception {
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    protected void addBookToDBButtonAction(ActionEvent event) {
         Book bookToAdd = new Book();
         bookToAdd.setBookISBN(bookISBNTextEntry.getText());
         bookToAdd.setBookAuthor(bookAuthorTextEntry.getText());
@@ -43,15 +61,14 @@ public class AddBookController{
     }
 
     @FXML
-    protected void homeScreenButtonAction(ActionEvent event) throws Exception
-    {
+    protected void homeScreenButtonAction(ActionEvent event) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
         Parent root = loader.load();
 
         HomeScreenController homeScreenController = loader.getController();
 
-        Scene changedSceneHome = new Scene(root, 994,697);
+        Scene changedSceneHome = new Scene(root, 994, 697);
 
         Stage stage = (Stage) homeScreenButton.getScene().getWindow();
 

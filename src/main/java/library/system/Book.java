@@ -1,10 +1,10 @@
 package library.system;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
-public class Book
-{
+public class Book {
     private int bookID;
     private String bookISBN;
     private String bookTitle;
@@ -15,83 +15,68 @@ public class Book
     private int bookQuantity;
 
     @Id
-    public int getBookID()
-    {
-        return  bookID;
+    public int getBookID() {
+        return bookID;
     }
 
-    public void setBookID(int newBookID)
-    {
+    public void setBookID(int newBookID) {
         bookID = newBookID;
     }
 
-    public String getBookISBN()
-    {
+    public String getBookISBN() {
         return bookISBN;
     }
 
-    public void setBookISBN(String newISBN)
-    {
+    public void setBookISBN(String newISBN) {
         bookISBN = newISBN;
     }
-    public String getBookTitle()
-    {
+
+    public String getBookTitle() {
         return bookTitle;
     }
 
-    public void setBookTitle(String newBookTitle)
-    {
+    public void setBookTitle(String newBookTitle) {
         bookTitle = newBookTitle;
     }
 
-    public String getBookAuthor()
-    {
+    public String getBookAuthor() {
         return bookAuthor;
     }
 
-    public void setBookAuthor(String newBookAuthor)
-    {
+    public void setBookAuthor(String newBookAuthor) {
         bookAuthor = newBookAuthor;
     }
 
-    public String getBookFormat()
-    {
+    public String getBookFormat() {
         return bookFormat;
     }
 
-    public void setBookFormat(String newBookFormat)
-    {
+    public void setBookFormat(String newBookFormat) {
         bookFormat = newBookFormat;
     }
 
-    public String getBookGenre()
-    {
+    public String getBookGenre() {
         return bookGenre;
     }
 
-    public void setBookGenre(String newBookGenre)
-    {
+    public void setBookGenre(String newBookGenre) {
         bookGenre = newBookGenre;
     }
 
 
-    public String getBookOverview()
-    {
+    public String getBookOverview() {
         return bookOverview;
     }
 
-    public void setBookOverview(String newBookOverview)
-    {
+    public void setBookOverview(String newBookOverview) {
         bookOverview = newBookOverview;
     }
 
-    public int getBookQuantity()
-    {
+    public int getBookQuantity() {
         return bookQuantity;
     }
 
-    public void setBookQuantity(int newBookQuantity)
-    {
+    public void setBookQuantity(int newBookQuantity) {
         bookQuantity = newBookQuantity;
     }
 }

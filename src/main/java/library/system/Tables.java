@@ -1,5 +1,8 @@
 package library.system;
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 @Entity
 public class Tables {
 
@@ -11,11 +14,18 @@ public class Tables {
 
     //constructor
     @Id
-    public int getTablesID() { return tablesID; }
-    public void setTablesID(int newTablesID){tablesID = newTablesID;}
+    public int getTablesID() {
+        return tablesID;
+    }
+
+    public void setTablesID(int newTablesID) {
+        tablesID = newTablesID;
+    }
+
     public String getTablesSize() {
         return tablesSize;
     }
+
     public void setTablesSize(String newTablesSize) {
         tablesSize = newTablesSize;
     }
@@ -23,7 +33,16 @@ public class Tables {
     public int getTablesPlayers() {
         return tablesPlayers;
     }
-    public void setTablesPlayers(int newTablesPlayers) {tablesPlayers = newTablesPlayers;}
-    public int getTablesQuantity() {return tablesQuantity;}
-    public void setTablesQuantity(int newTablesQuantity){ tablesQuantity = newTablesQuantity;}
+
+    public void setTablesPlayers(int newTablesPlayers) {
+        tablesPlayers = newTablesPlayers;
+    }
+
+    public int getTablesQuantity() {
+        return tablesQuantity;
+    }
+
+    public void setTablesQuantity(int newTablesQuantity) {
+        tablesQuantity = newTablesQuantity;
+    }
 }

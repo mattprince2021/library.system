@@ -118,5 +118,17 @@
             onAction="#addGamesToDBButtonAction"
     />
     </HBox>
+     <HBox spacing="10"
+           alignment="BOTTOM_LEFT"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="20">
 
+         <Button fx:id="logoutButton"
+                 prefWidth="200"
+                 prefHeight="60"
+                 text="Exit Program"
+                 onAction="#logoutButtonAction"
+         />
+
+     </HBox>
 </GridPane>

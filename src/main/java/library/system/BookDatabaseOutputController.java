@@ -6,18 +6,26 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 public class BookDatabaseOutputController {
-    @FXML private Text databaseContentText;
-    @FXML private TextField bookAuthorTextEntry;
-    @FXML private TextField bookTitleTextEntry;
-    @FXML private TextField bookISBNTextEntry;
-    @FXML private TextField bookFormatTextEntry;
-    @FXML private TextField bookGenreTextEntry;
-    @FXML private TextField bookOverviewTextEntry;
-    @FXML private TextField bookQuantityTextEntry;
+    @FXML
+    private Text databaseContentText;
+    @FXML
+    private TextField bookAuthorTextEntry;
+    @FXML
+    private TextField bookTitleTextEntry;
+    @FXML
+    private TextField bookISBNTextEntry;
+    @FXML
+    private TextField bookFormatTextEntry;
+    @FXML
+    private TextField bookGenreTextEntry;
+    @FXML
+    private TextField bookOverviewTextEntry;
+    @FXML
+    private TextField bookQuantityTextEntry;
 
-    @FXML protected void addBookButtonClicked(ActionEvent event)
-    {
-        int bookISBNEntered= Integer.parseInt(bookISBNTextEntry.getText());
+    @FXML
+    protected void addBookButtonClicked(ActionEvent event) {
+        int bookISBNEntered = Integer.parseInt(bookISBNTextEntry.getText());
 
         Book bookToAdd = new Book();
         bookToAdd.setBookISBN(bookISBNTextEntry.getText());

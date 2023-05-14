@@ -9,14 +9,14 @@ import javafx.scene.layout.GridPane;
 
 import java.util.Optional;
 
-public class EditMusic {
+public class AddUser_Unused {
 
     private final String result;
 
-    public EditMusic() {
+    public AddUser_Unused() {
         Dialog<String> dialog = new Dialog<>();
-        dialog.setTitle("Edit Music");
-        dialog.setHeaderText("Edit Music");
+        dialog.setTitle("Add Book");
+        dialog.setHeaderText("Add book");
 
         ButtonType confirm = new ButtonType("Edit");
         dialog.getDialogPane().getButtonTypes().add(confirm);
@@ -26,8 +26,8 @@ public class EditMusic {
         grid.setVgap(10);
         grid.setPadding(new Insets(20, 150, 10, 10));
 
-        TextField artist = new TextField();
-        artist.setPromptText("Artist");
+        TextField author = new TextField();
+        author.setPromptText("Author");
 
         TextField title = new TextField();
         title.setPromptText("Title");
@@ -38,11 +38,12 @@ public class EditMusic {
         TextField category = new TextField();
         category.setPromptText("Genre");
 
+
         TextField format = new TextField();
         category.setPromptText("Format");
 
-        grid.add(new Label("Artist:"), 0, 0);
-        grid.add(artist, 1, 0);
+        grid.add(new Label("Author:"), 0, 0);
+        grid.add(author, 1, 0);
 
         grid.add(new Label("Title:"), 0, 1);
         grid.add(title, 1, 1);
@@ -60,7 +61,7 @@ public class EditMusic {
 
         dialog.setResultConverter(dialogButton -> {
             if (dialogButton == confirm) {
-                return artist.getText() + ";" + title.getText() + ";" + isbn.getText() + ";" + category.getText() + ";"
+                return author.getText() + ";" + title.getText() + ";" + isbn.getText() + ";" + category.getText() + ";"
                         + format.getText();
             }
             return null;

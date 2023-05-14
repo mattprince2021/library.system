@@ -11,13 +11,21 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddTableController {
-    @FXML private Label addTableMessage;
-    @FXML private Button homeScreenButton;
-    @FXML private TextField tablesSizeTextEntry;
-    @FXML private TextField tablesPlayersTextEntry;
-    @FXML private TextField tablesQuantityTextEntry;
-    @FXML protected void addTableToDBButtonAction(ActionEvent event)
-    {
+    @FXML
+    private Label addTableMessage;
+    @FXML
+    private Button homeScreenButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private TextField tablesSizeTextEntry;
+    @FXML
+    private TextField tablesPlayersTextEntry;
+    @FXML
+    private TextField tablesQuantityTextEntry;
+
+    @FXML
+    protected void addTableToDBButtonAction(ActionEvent event) {
         Tables tablesToAdd = new Tables();
         tablesToAdd.setTablesSize(tablesSizeTextEntry.getText());
         tablesToAdd.setTablesPlayers(Integer.parseInt(tablesPlayersTextEntry.getText()));
@@ -30,15 +38,20 @@ public class AddTableController {
     }
 
     @FXML
-    protected void homeScreenButtonAction(ActionEvent event) throws Exception
-    {
+    protected void logoutButtonAction(ActionEvent event) throws Exception {
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    protected void homeScreenButtonAction(ActionEvent event) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
         Parent root = loader.load();
 
         HomeScreenController homeScreenController = loader.getController();
 
-        Scene changedSceneHome = new Scene(root, 994,697);
+        Scene changedSceneHome = new Scene(root, 994, 697);
 
         Stage stage = (Stage) homeScreenButton.getScene().getWindow();
 

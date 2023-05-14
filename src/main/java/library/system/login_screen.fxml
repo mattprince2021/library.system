@@ -24,26 +24,34 @@
           GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label text="Username: "
+    <Label text="First Name: "
            GridPane.columnIndex="0"
            GridPane.rowIndex="1"/>
 
-    <TextField fx:id="userNameEntry"
+    <TextField fx:id="firstNameTextEntry"
                GridPane.columnIndex="1"
                GridPane.rowIndex="1"/>
 
-    <Label text="PIN: "
+    <Label text="Surname: "
            GridPane.columnIndex="0"
            GridPane.rowIndex="2"/>
 
-    <PasswordField fx:id="pinField"
+    <TextField fx:id="lastNameTextEntry"
                GridPane.columnIndex="1"
                GridPane.rowIndex="2"/>
+
+    <Label text="PIN: "
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="3"/>
+
+    <PasswordField fx:id="pinEntry"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="3"/>
 
     <HBox spacing="10"
           alignment="BOTTOM_RIGHT"
           GridPane.columnIndex="1"
-          GridPane.rowIndex="4">
+          GridPane.rowIndex="5">
 
         <Button fx:id="loginButton"
                 prefWidth="200"
@@ -57,7 +65,7 @@
     <HBox spacing="10"
           alignment="BOTTOM_RIGHT"
           GridPane.columnIndex="1"
-          GridPane.rowIndex="5">
+          GridPane.rowIndex="6">
 
         <Button fx:id="cancelLoginButton"
                 prefWidth="200"

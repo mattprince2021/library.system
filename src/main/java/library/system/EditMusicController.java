@@ -7,164 +7,74 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class EditMusicController{
-    @FXML private Label addBookMessage;
-
+public class EditMusicController {
+    @FXML
+    private Label addBookMessage;
+    @FXML
+    private Button homeScreenButton;
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private TextField musicArtistTextEntry;
+    @FXML
+    private TextField musicTitleTextEntry;
+    @FXML
+    private TextField musicGenreTextEntry;
+    @FXML
+    private TextField musicFormatTextEntry;
+    @FXML
+    private TextArea musicOverviewTextEntry;
+    @FXML
+    private TextField musicBarcodeTextEntry;
+    @FXML
+    private TextField musicQuantityTextEntry;
 
     @FXML
-    private Button addBookButton, editBookButton, addMusicButton, editMusicButton, addGamesButton,
-            editGamesButton, addFilmButton, editFilmButton, addTableButton, editTableButton;
-    @FXML
-    protected void addBookButtonAction(ActionEvent event) throws Exception
-    {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddBook.fxml"));
-        Parent root = loader.load();
-
-        AddBookController addBookController = loader.getController();
-
-        Scene addBookScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) addBookButton.getScene().getWindow();
-
-        stage.setScene(addBookScene);
-        stage.show();
+    protected void logoutButtonAction(ActionEvent event) throws Exception {
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
-    protected void editBookButtonAction(ActionEvent event) throws Exception
-    {
+    protected void addMusicToDBButtonAction(ActionEvent event) {
+        Music musicToAdd = new Music();
+        musicToAdd.setMusicBarcode(musicBarcodeTextEntry.getText());
+        musicToAdd.setMusicArtist(musicArtistTextEntry.getText());
+        musicToAdd.setMusicFormat(musicFormatTextEntry.getText());
+        musicToAdd.setMusicGenre(musicGenreTextEntry.getText());
+        musicToAdd.setMusicTitle(musicTitleTextEntry.getText());
+        musicToAdd.setMusicOverview(musicOverviewTextEntry.getText());
+        musicToAdd.setMusicQuantity(Integer.parseInt(musicQuantityTextEntry.getText()));
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditBook.fxml"));
-        Parent root = loader.load();
-
-        EditBookController editBookController = loader.getController();
-
-        Scene editBookScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) editBookButton.getScene().getWindow();
-
-        stage.setScene(editBookScene);
-        stage.show();
+        MusicDatabaseConnection.addMusicToDatabase(musicToAdd);
+        musicBarcodeTextEntry.setText("");
+        musicArtistTextEntry.setText("");
+        musicFormatTextEntry.setText("");
+        musicGenreTextEntry.setText("");
+        musicTitleTextEntry.setText("");
+        musicOverviewTextEntry.setText("");
+        musicQuantityTextEntry.setText("");
     }
-    @FXML
-    protected void addMusicButtonAction(ActionEvent event) throws Exception
-    {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddMusic.fxml"));
-        Parent root = loader.load();
-
-        AddMusicController addMusicController = loader.getController();
-
-        Scene addMusicScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) addMusicButton.getScene().getWindow();
-
-        stage.setScene(addMusicScene);
-        stage.show();
-    }
 
     @FXML
-    protected void addGamesButtonAction(ActionEvent event) throws Exception
-    {
+    protected void homeScreenButtonAction(ActionEvent event) throws Exception {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddGames.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
         Parent root = loader.load();
 
-        AddGamesController addGamesController = loader.getController();
+        HomeScreenController homeScreenController = loader.getController();
 
-        Scene addGamesScene = new Scene(root, 994,697);
+        Scene changedSceneHome = new Scene(root, 994, 697);
 
-        Stage stage = (Stage) addGamesButton.getScene().getWindow();
+        Stage stage = (Stage) homeScreenButton.getScene().getWindow();
 
-        stage.setScene(addGamesScene);
+        stage.setScene(changedSceneHome);
         stage.show();
+
     }
-    @FXML
-    protected void editGamesButtonAction(ActionEvent event) throws Exception
-    {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditGames.fxml"));
-        Parent root = loader.load();
-
-        EditGamesController editGamesController = loader.getController();
-
-        Scene editGamesScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) editGamesButton.getScene().getWindow();
-
-        stage.setScene(editGamesScene);
-        stage.show();
-    }
-
-    @FXML
-    protected void addFilmButtonAction(ActionEvent event) throws Exception
-    {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddFilm.fxml"));
-        Parent root = loader.load();
-
-        AddFilmController addFilmController = loader.getController();
-
-        Scene addFilmScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) addFilmButton.getScene().getWindow();
-
-        stage.setScene(addFilmScene);
-        stage.show();
-    }
-    @FXML
-    protected void editFilmButtonAction(ActionEvent event) throws Exception
-    {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditFilm.fxml"));
-        Parent root = loader.load();
-
-        EditFilmController editFilmController = loader.getController();
-
-        Scene editFilmScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) editFilmButton.getScene().getWindow();
-
-        stage.setScene(editFilmScene);
-        stage.show();
-    }
-
-    @FXML
-    protected void addTableButtonAction(ActionEvent event) throws Exception
-    {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddTable.fxml"));
-        Parent root = loader.load();
-
-        AddTableController addTableController = loader.getController();
-
-        Scene addTableScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) addTableButton.getScene().getWindow();
-
-        stage.setScene(addTableScene);
-        stage.show();
-    }
-    @FXML
-    protected void editTableButtonAction(ActionEvent event) throws Exception
-    {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditTable.fxml"));
-        Parent root = loader.load();
-
-        EditTableController editTableController = loader.getController();
-
-        Scene editTableScene = new Scene(root, 994,697);
-
-        Stage stage = (Stage) editTableButton.getScene().getWindow();
-
-        stage.setScene(editTableScene);
-        stage.show();
-    }
-
-
-
 }

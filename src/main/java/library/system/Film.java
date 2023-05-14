@@ -1,10 +1,10 @@
 package library.system;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
-public class Film
-{
+public class Film {
     private int filmID;
     private String filmTitle;
     private String filmStudio;
@@ -16,27 +16,37 @@ public class Film
     private String filmAge;
 
     @Id
-    public int getFilmID() { return filmID;}
+    public int getFilmID() {
+        return filmID;
+    }
 
-    public void setFilmID(int newFilmID) { filmID = newFilmID; }
+    public void setFilmID(int newFilmID) {
+        filmID = newFilmID;
+    }
 
     public String getFilmTitle() {
         return filmTitle;
     }
 
-    public void setFilmTitle(String newFilmTitle) {filmTitle = newFilmTitle;}
+    public void setFilmTitle(String newFilmTitle) {
+        filmTitle = newFilmTitle;
+    }
 
     public String getFilmStudio() {
         return filmStudio;
     }
 
-    public void setFilmStudio(String newFilmStudio) { filmStudio = newFilmStudio;}
+    public void setFilmStudio(String newFilmStudio) {
+        filmStudio = newFilmStudio;
+    }
 
     public String getFilmFormat() {
         return filmFormat;
     }
 
-    public void setFilmFormat(String newFilmFormat) { filmFormat = newFilmFormat;}
+    public void setFilmFormat(String newFilmFormat) {
+        filmFormat = newFilmFormat;
+    }
 
     public String getFilmGenre() {
         return filmGenre;
@@ -58,13 +68,24 @@ public class Film
         return filmBarcode;
     }
 
-    public void setFilmBarcode(String newFilmBarcode) { filmBarcode = newFilmBarcode;}
+    public void setFilmBarcode(String newFilmBarcode) {
+        filmBarcode = newFilmBarcode;
+    }
 
-    public int getFilmQuantity() { return filmQuantity; }
+    public int getFilmQuantity() {
+        return filmQuantity;
+    }
 
-    public void setFilmQuantity(int newFilmQuantity) { filmQuantity = newFilmQuantity;}
+    public void setFilmQuantity(int newFilmQuantity) {
+        filmQuantity = newFilmQuantity;
+    }
 
-    public String getFilmAge(){ return filmAge;}
-    public void setFilmAge(String newFilmAge){ filmAge = newFilmAge;}
+    public String getFilmAge() {
+        return filmAge;
+    }
+
+    public void setFilmAge(String newFilmAge) {
+        filmAge = newFilmAge;
+    }
 }
 

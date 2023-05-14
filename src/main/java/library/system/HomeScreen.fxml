@@ -1,169 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.geometry.Insets?>
-<GridPane xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml"
-          fx:controller="library.system.HomeScreenController"
-          alignment="TOP_LEFT"
-          hgap="10"
-          vgap="10"
-          stylesheets="@Login.css">
+<GridPane alignment="TOP_LEFT"
+    hgap="10"
+    prefHeight="697.0"
+    prefWidth="994.0"
+    stylesheets="@Login.css"
+    vgap="10"
+    xmlns="http://javafx.com/javafx/19"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="library.system.HomeScreenController">
 
-    <padding><Insets top="25" bottom="25" right="25" left="25" /></padding>
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25" />
+    </padding>
 
     <Text id="welcome-text"
-          text="Welcome to the Prince Library"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="0"
-          GridPane.columnSpan="2"/>
+        text="Welcome to the Prince Library"
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="3" />
 
     <HBox spacing="10"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="1"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="1">
 
         <Button fx:id="addBookButton"
-                text="Add Book"
-                onAction="#addBookButtonAction"
-        />
+            onAction="#addBookButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Add Book" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="1"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="2"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="1">
 
         <Button fx:id="editBookButton"
-                text="Edit Book"
-                onAction="#editBookButtonAction"
-        />
+            onAction="#editBookButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Edit Book" />
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="2"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="2">
 
         <Button fx:id="addMusicButton"
-                text="Add Music"
-                onAction="#addMusicButtonAction"
-        />
+            onAction="#addMusicButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Add Music" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="2"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="2"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="2">
 
         <Button fx:id="editMusicButton"
-                text="Edit Music"
-                onAction="#editMusicButtonAction"
-        />
+            onAction="#editMusicButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Edit Music" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="4"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="4">
 
         <Button fx:id="addGamesButton"
-                text="Add Games"
-                onAction="#addGamesButtonAction"
-        />
+            onAction="#addGamesButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Add Games" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="4"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="2"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="4">
 
         <Button fx:id="editGamesButton"
-                text="Edit Games"
-                onAction="#editGamesButtonAction"
-        />
+            onAction="#editGamesButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Edit Games" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="3"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="3">
 
         <Button fx:id="addFilmButton"
-                text="Add Film"
-                onAction="#addFilmButtonAction"
-        />
+            onAction="#addFilmButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Add Film" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="3"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="2"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="3">
 
         <Button fx:id="editFilmButton"
-                text="Edit Film"
-                onAction="#editFilmButtonAction"
-        />
+            onAction="#editFilmButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Edit Film" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="5"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="5">
 
         <Button fx:id="addTableButton"
-                text="Add Table"
-                onAction="#addTableButtonAction"
-        />
+            onAction="#addTableButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Add Table" />
 
     </HBox>
 
     <HBox spacing="10"
-          GridPane.columnIndex="1"
-          GridPane.rowIndex="5"
-          GridPane.columnSpan="1"
-    >
+        GridPane.columnIndex="2"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="5">
 
         <Button fx:id="editTableButton"
-                text="Edit Table"
-                onAction="#editTableButtonAction"
-        />
+            onAction="#editTableButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Edit Table" />
 
     </HBox>
 
-        <HBox spacing="10"
-              alignment="BOTTOM_LEFT"
-              GridPane.columnIndex="0"
-              GridPane.rowIndex="20">
+    <HBox spacing="10"
+        GridPane.columnIndex="1"
+        GridPane.columnSpan="1"
+        GridPane.rowIndex="6">
 
-            <Button fx:id="logoutButton"
-                    prefWidth="200"
-                    prefHeight="60"
-                    text="Exit Program"
-                    onAction="#logoutButtonAction"
-            />
+        <Button fx:id="addUserButton"
+            onAction="#addUserButtonAction"
+            prefHeight="24.0"
+            prefWidth="98.0"
+            text="Add User" />
 
-        </HBox>
+    </HBox>
+
+    <HBox alignment="BOTTOM_LEFT"
+        spacing="10"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="20">
+
+        <Button fx:id="logoutButton"
+            onAction="#logoutButtonAction"
+            prefHeight="60"
+            prefWidth="98.0"
+            text="Exit Program" />
+
+    </HBox>
+
 </GridPane>

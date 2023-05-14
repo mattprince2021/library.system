@@ -3,13 +3,18 @@ package library.system;
 public class BookOLD {
     //instance variables
 
-    private String bookTitle, bookAuthor, bookFormat, bookGenre, bookOverview, bookISBN,bookQuantity;
+    private final String bookAuthor;
+    private final String bookFormat;
+    private final String bookISBN;
+    private String bookTitle;
+    private String bookGenre;
+    private String bookOverview;
+    private String bookQuantity;
 
 
     //constructors
 
-    public BookOLD(String bTitle, String bAuthor, String bFormat, String bGenre, String bOverview, String bISBN, String bQty)
-    {
+    public BookOLD(String bTitle, String bAuthor, String bFormat, String bGenre, String bOverview, String bISBN, String bQty) {
         bookTitle = bTitle;
         bookAuthor = bAuthor;
         bookFormat = bFormat;
@@ -21,21 +26,37 @@ public class BookOLD {
 
     //methods
 
-    public String getBookTitle() { return bookTitle; }
+    public String getBookTitle() {
+        return bookTitle;
+    }
 
-    public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
+    public void setBookTitle(String bookTitle) {
+        this.bookTitle = bookTitle;
+    }
 
-    public String getBookAuthor() { return bookAuthor; }
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
 
-    public String getBookFormat() { return bookFormat; }
+    public String getBookFormat() {
+        return bookFormat;
+    }
 
-    public String getBookGenre() { return bookGenre; }
+    public String getBookGenre() {
+        return bookGenre;
+    }
 
-    public void setBookGenre(String bookGenre) { this.bookGenre = bookGenre; }
+    public void setBookGenre(String bookGenre) {
+        this.bookGenre = bookGenre;
+    }
 
-    public String getBookOverview() { return bookOverview; }
+    public String getBookOverview() {
+        return bookOverview;
+    }
 
-    public void setBookOverview(String bookOverview) { this.bookOverview = bookOverview; }
+    public void setBookOverview(String bookOverview) {
+        this.bookOverview = bookOverview;
+    }
 
     public String getBookISBN() {
         return bookISBN;
@@ -45,10 +66,11 @@ public class BookOLD {
         return bookQuantity;
     }
 
-    public void setBookQuantity(String bookQuantity) { this.bookQuantity = bookQuantity; }
+    public void setBookQuantity(String bookQuantity) {
+        this.bookQuantity = bookQuantity;
+    }
 
-    public String getBookInformation()
-    {
+    public String getBookInformation() {
         String bookInformation = bookTitle + "; ";
         bookInformation += bookAuthor + "; ";
         bookInformation += bookFormat + "; ";

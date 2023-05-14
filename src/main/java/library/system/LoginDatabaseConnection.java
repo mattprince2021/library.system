@@ -7,22 +7,22 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class GamesDatabaseConnection {
+public class LoginDatabaseConnection {
     static Session databaseSession = null;
     static SessionFactory sessionFactory = null;
 
-    public static void addGamesToDatabase(Games gamesToAdd) {
+    public static void addUserToDatabase(User userToAdd) {
         openDBSession();
-        gamesToAdd.setGamesID(getNextID());
+        userToAdd.setUserID(getNextID());
         databaseSession.beginTransaction();
-        databaseSession.persist(gamesToAdd);
+        databaseSession.persist(userToAdd);
         databaseSession.getTransaction().commit();
         closeDBSession();
     }
 
-    public static List<?> getGames(int gamesID) {
+    public static List<?> getUser(int userID) {
         openDBSession();
-        Query query = databaseSession.createQuery("from Games where gamesID = " + gamesID);
+        Query query = databaseSession.createQuery("from User where userID = " + userID);
         List<?> list = ((Query<?>) query).list();
         closeDBSession();
         return list;
@@ -44,7 +44,7 @@ public class GamesDatabaseConnection {
     }
 
     private static int getNextID() {
-        Query query = databaseSession.createQuery("select max(gamesID) from Games");
+        Query query = databaseSession.createQuery("select max(userID) from User");
         System.out.println(query.list().get(0));
         return (Integer) query.list().get(0) + 1;
     }

@@ -5,11 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Reworked Buttons for simplicity and Navigation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUser.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUser_Unused.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginDatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/system/UserDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddGames.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGames.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusic.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseOutputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseOutputController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookOLD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/BookOLD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/DatabaseOutputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/DatabaseOutputController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditGames.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditGames.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditGamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditGamesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/StockItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/StockItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/TablesDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/TablesDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/login_screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Book.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Book.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +117,7 @@
       <list>
         <option value="CSS File" />
         <option value="FxmlFile" />
+        <option value="module-info" />
         <option value="Class" />
       </list>
     </option>
@@ -90,43 +140,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/matthewprince/IdeaProjects/library.system/src/main/resources&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JPA.DatabaseSchemaImportDialog": "dd8bb58f-d24e-4f85-9a7d-901113385c2a",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "/Users/matthewprince/IdeaProjects/library.system/src/main/java/library/system",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/library/system" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/library/system" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="library.system" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="library.system" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.library.system [run]">
@@ -237,7 +292,7 @@
       <updated>1682693722039</updated>
       <workItem from="1682693723405" duration="39652000" />
       <workItem from="1683455640423" duration="7153000" />
-      <workItem from="1683897170536" duration="4091000" />
+      <workItem from="1683897170536" duration="34803000" />
     </task>
     <task id="LOCAL-00001" summary="initial classes">
       <created>1682696097348</created>
@@ -351,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683901540293</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Reworked Buttons for simplicity and Navigation">
+      <created>1683903974247</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683903974247</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

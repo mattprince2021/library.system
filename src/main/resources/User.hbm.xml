@@ -4,9 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name = "library.system.User" table = "user">
-        <id name = "employeeID" column = "employeeID" type = "int" />
-        <property name = "name" column = "name" type = "string"/>
+        <id name = "userID" column = "userID" type = "int" />
+        <property name = "firstName" column = "firstName" type = "string"/>
+        <property name = "lastName" column = "lastName" type = "string"/>
         <property name = "passwordPIN" column = "passwordPIN" type = "string"/>
-        <property name = "supervisor" column = "supervisor" type = "boolean"/>
+        <property name = "supervisor" column = "supervisor" type = "string"/>
     </class>
 </hibernate-mapping>
