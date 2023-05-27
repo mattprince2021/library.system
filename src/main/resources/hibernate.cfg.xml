@@ -11,13 +11,14 @@
         <property name="connection.pool_size">10</property>
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<!--        <property name = "dialect"> org.hibernate.dialect.PostgreSQLDialect </property>-->
         <property name="hibernate.transform_hbm_xml.enabled">true</property>
         <property name="current_session_context_class">thread</property>
         <mapping resource = "Games.hbm.xml"/>
         <mapping resource = "Film.hbm.xml"/>
         <mapping resource = "Music.hbm.xml"/>
         <mapping resource = "Tables.hbm.xml"/>
-        <mapping resource = "User.hbm.xml"/>
+        <mapping resource = "user.hbm.xml"/>
         <mapping resource = "Book.hbm.xml"/>
 
     </session-factory>

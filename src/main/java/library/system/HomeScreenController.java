@@ -205,20 +205,6 @@ public class HomeScreenController {
         stage.setScene(addUserScene);
         stage.show();
     }
-//    @FXML protected void editUserButtonAction(ActionEvent event) throws Exception
-//    {
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditUser.fxml"));
-//        Parent root = loader.load();
-//
-//        EditUserController editUserController = loader.getController();
-//
-//        Scene editUserScene = new Scene(root, 994,697);
-//
-//        Stage stage = (Stage) editUserButton.getScene().getWindow();
-//
-//        stage.setScene(editUserScene);
-//        stage.show();
-//    }
 
     @FXML
     protected void logoutButtonAction(ActionEvent event) throws Exception {

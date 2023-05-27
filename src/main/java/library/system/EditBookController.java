@@ -13,12 +13,13 @@ import javafx.stage.Stage;
 
 public class EditBookController {
     @FXML
+    TextField bookIDTextEntry;
+    @FXML
     private Label addBookMessage;
     @FXML
     private Button homeScreenButton;
     @FXML
     private Button logoutButton;
-    @FXML TextField bookIDTextEntry;
     @FXML
     private TextField bookAuthorTextEntry;
     @FXML

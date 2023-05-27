@@ -25,40 +25,48 @@
             GridPane.rowIndex="0"
             GridPane.columnSpan="2"/>
 
-    <Label text="First Name"
+    <Label text="Username"
             GridPane.columnIndex="0"
             GridPane.rowIndex="1"
     />
-    <TextField fx:id="userFirstNameTextEntry"
+    <TextField fx:id="userNameTextEntry"
             GridPane.columnIndex="1"
             GridPane.rowIndex="1"/>
 
-    <Label text="Surname"
+    <Label text="First Name"
             GridPane.columnIndex="0"
             GridPane.rowIndex="2"
+    />
+    <TextField fx:id="userFirstNameTextEntry"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"/>
+
+    <Label text="Surname"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="3"
     />
 
     <TextField fx:id="userLastNameTextEntry"
             GridPane.columnIndex="1"
-            GridPane.rowIndex="2"/>
+            GridPane.rowIndex="3"/>
 
     <Label text="Password / PIN"
-           GridPane.columnIndex="0"
-           GridPane.rowIndex="3"
-    />
-
-    <TextField fx:id="passwordPINTextEntry"
-                GridPane.columnIndex="1"
-                GridPane.rowIndex="3"/>
-
-    <Label text="Supervisor"
            GridPane.columnIndex="0"
            GridPane.rowIndex="4"
     />
 
-    <TextField fx:id="userSupervisorTextEntry"
+    <TextField fx:id="passwordPINTextEntry"
                 GridPane.columnIndex="1"
                 GridPane.rowIndex="4"/>
+
+    <Label text="Supervisor"
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="5"
+    />
+
+    <TextField fx:id="userSupervisorTextEntry"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="5"/>
 
    <HBox spacing="10"
             GridPane.columnIndex="1"

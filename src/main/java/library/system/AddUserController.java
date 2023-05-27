@@ -18,6 +18,8 @@ public class AddUserController {
     @FXML
     private Button logoutButton;
     @FXML
+    private TextField userNameTextEntry;
+    @FXML
     private TextField userFirstNameTextEntry;
     @FXML
     private TextField userLastNameTextEntry;
@@ -29,12 +31,14 @@ public class AddUserController {
     @FXML
     protected void addUserToDBButtonAction(ActionEvent event) {
         User userToAdd = new User();
+        userToAdd.setUserName(userNameTextEntry.getText());
         userToAdd.setFirstName(userFirstNameTextEntry.getText());
         userToAdd.setLastName(userLastNameTextEntry.getText());
         userToAdd.setPasswordPIN(passwordPINTextEntry.getText());
         userToAdd.setSupervisor(userSupervisorTextEntry.getText());
 
         UserDatabaseConnection.addUserToDatabase(userToAdd);
+        userNameTextEntry.setText("");
         userFirstNameTextEntry.setText("");
         userLastNameTextEntry.setText("");
         passwordPINTextEntry.setText("");

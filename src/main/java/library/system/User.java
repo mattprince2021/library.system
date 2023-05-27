@@ -6,6 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class User {
     private int userID;
+    private String userName;
     private String firstName;
     private String lastName;
     private String passwordPIN;
@@ -18,6 +19,14 @@ public class User {
 
     public void setUserID(int newID) {
         userID = newID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String newUserName) {
+        userName = newUserName;
     }
 
     public String getFirstName() {
