@@ -6,7 +6,11 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
 import java.util.List;
-
+/**
+ * This database connection is currently a placeholder for functionality due to be delivered in future release
+ * @author matthewprince
+ * @version 1.0
+ */
 public class LoginDatabaseConnection {
     static Session databaseSession = null;
     static SessionFactory sessionFactory = null;

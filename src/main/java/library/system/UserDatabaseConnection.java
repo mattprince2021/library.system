@@ -6,6 +6,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
 import java.util.List;
+
 /**
  * This database connector opens a connection to the relevant database and writes the data, then closes the connection.
  * The data in the controller data entry fields are aligned to the class. Included are a submission button, a button to
@@ -34,6 +35,7 @@ public class UserDatabaseConnection {
         closeDBSession();
         return list;
     }
+
     /**
      * Opens the database session
      */
@@ -43,6 +45,7 @@ public class UserDatabaseConnection {
 // used to get a physical connection with the database
         databaseSession = sessionFactory.openSession();
     }
+
     /**
      * Closes the database session
      */
@@ -53,6 +56,7 @@ public class UserDatabaseConnection {
         sessionFactory = null;
         databaseSession = null;
     }
+
     /**
      * Sets the next ID
      */

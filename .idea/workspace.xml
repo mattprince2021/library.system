@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Final Version of code">
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Final Version of code with Javadocs code">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
@@ -14,11 +18,18 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditGamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditGamesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditMusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditTableController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Games.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/LoginDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/LoginScreenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" afterDir="false" />
@@ -66,6 +77,12 @@
                 <item name="library.system" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="library.system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -151,22 +168,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.library.system [run]">
+  <component name="RunManager" selected="Gradle.library.system [javadoc]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="library.system.Main" />
-      <module name="library.system.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="library.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="library.system.Main_OLD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="library.system.Main_OLD" />
       <module name="library.system.main" />
       <extension name="coverage">
         <pattern>
@@ -220,6 +224,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="library.system [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="library.system [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -243,6 +268,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.library.system [javadoc]" />
         <item itemvalue="Gradle.library.system [run]" />
         <item itemvalue="Gradle.library.system [build]" />
         <item itemvalue="Gradle.library.system [buildDependents]" />
@@ -395,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685182550132</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Final Version of code with Javadocs code">
+      <created>1685220337576</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1685220337576</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +458,8 @@
     <MESSAGE value="All functions write to DB" />
     <MESSAGE value="Reworked Buttons for simplicity and Navigation" />
     <MESSAGE value="Final Version of code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Version of code" />
+    <MESSAGE value="Final Version of code with Javadocs code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version of code with Javadocs code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

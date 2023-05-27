@@ -9,7 +9,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+/**
+ * This controller is currently a placeholder for edit functionality due to be delivered in future release
+ * @author matthewprince
+ * @version 1.0
+ */
 public class EditTableController {
     @FXML
     private Label editTableMessage;

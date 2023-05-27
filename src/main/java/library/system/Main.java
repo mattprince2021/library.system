@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * This program functions Stocking a variety of media, including books, music CDs, TV and film DVDs and Blu-rays, the
  * library requires a digitised stock management system to integrate with a front-end UI. In addition, user accounts
@@ -19,6 +20,7 @@ import java.util.List;
 public class Main extends Application {
     public static List<Stage> stageval = new ArrayList<Stage>();
     public static List<String> fxmlval = new ArrayList<String>();
+
     /**
      * Initiates the Login Screen
      */

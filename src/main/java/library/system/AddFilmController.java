@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 /**
  * This controller functions to take the entered data and write to the database. The data entry fields are aligned to
  * the class. Included are a submission button, a button to return to the home screen and a button to exit the program
@@ -40,6 +41,7 @@ public class AddFilmController {
     private TextField filmQuantityTextEntry;
     @FXML
     private TextField filmAgeTextEntry;
+
     /**
      * Exits the user from the program
      */
@@ -48,6 +50,7 @@ public class AddFilmController {
         Stage stage = (Stage) logoutButton.getScene().getWindow();
         stage.close();
     }
+
     /**
      * Adds the user input data to the database
      */
@@ -73,6 +76,7 @@ public class AddFilmController {
         filmOverviewTextEntry.setText("");
         filmQuantityTextEntry.setText("");
     }
+
     /**
      * Returns the user to the Home Screen
      */

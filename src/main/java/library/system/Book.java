@@ -58,6 +58,7 @@ public class Book {
     public int getBookID() {
         return bookID;
     }
+
     /**
      * Setting the Book ID is controlled by the controller, this increments the most recent Book ID by 1
      */
@@ -73,6 +74,7 @@ public class Book {
     public String getBookISBN() {
         return bookISBN;
     }
+
     /**
      * Sets the ISBN of the Book
      */
@@ -88,6 +90,7 @@ public class Book {
     public String getBookTitle() {
         return bookTitle;
     }
+
     /**
      * Sets the Title of the Book
      */
@@ -103,6 +106,7 @@ public class Book {
     public String getBookAuthor() {
         return bookAuthor;
     }
+
     /**
      * Sets the Author of the Book
      */
@@ -118,6 +122,7 @@ public class Book {
     public String getBookFormat() {
         return bookFormat;
     }
+
     /**
      * Sets the Format of the Book
      */
@@ -133,6 +138,7 @@ public class Book {
     public String getBookGenre() {
         return bookGenre;
     }
+
     /**
      * Sets the Genre of the Book
      */
@@ -148,6 +154,7 @@ public class Book {
     public String getBookOverview() {
         return bookOverview;
     }
+
     /**
      * Sets the Overview of the Book
      */
@@ -163,6 +170,7 @@ public class Book {
     public int getBookQuantity() {
         return bookQuantity;
     }
+
     /**
      * Sets the Quantity of Book copies
      */

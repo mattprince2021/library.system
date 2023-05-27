@@ -24,14 +24,14 @@ public class Games {
     private int gamesQuantity;
 
     /**
-     * @param gID unique ID of the game in teh library
-     * @param gQuantity the total volume of copies
-     * @param gTitle title of the game
-     * @param gAges the manufacturers recommended minimum age for players
+     * @param gID         unique ID of the game in teh library
+     * @param gQuantity   the total volume of copies
+     * @param gTitle      title of the game
+     * @param gAges       the manufacturers recommended minimum age for players
      * @param gMinPlayers the manufacturers recommended minimum number of players
-     * @param gGenre the genre of the game
-     * @param gOverview a brief synopsis of the game
-     * @param gBarcode the barcode of the game
+     * @param gGenre      the genre of the game
+     * @param gOverview   a brief synopsis of the game
+     * @param gBarcode    the barcode of the game
      */
     //methods
     public Games(int gID, int gQuantity, String gTitle, String gAges, String gMinPlayers, String gGenre,
@@ -59,12 +59,14 @@ public class Games {
     public int getGamesID() {
         return gamesID;
     }
+
     /**
      * Setting the Game ID is controlled by the controller, this increments the most recent Game ID by 1
      */
     public void setGamesID(int newGamesID) {
         gamesID = newGamesID;
     }
+
     /**
      * Gets the Overview of the Game
      *
@@ -77,6 +79,7 @@ public class Games {
     public void setGamesOverview(String newGamesOverview) {
         gamesOverview = newGamesOverview;
     }
+
     /**
      * Gets the Title of the Game
      *
@@ -85,12 +88,14 @@ public class Games {
     public String getGamesTitle() {
         return gamesTitle;
     }
+
     /**
      * Sets the Title of the Game
      */
     public void setGamesTitle(String newGamesTitle) {
         gamesTitle = newGamesTitle;
     }
+
     /**
      * Gets the Minimum Age for the Game
      *
@@ -99,12 +104,14 @@ public class Games {
     public String getGamesAges() {
         return gamesAges;
     }
+
     /**
      * Sets the Minimum Age of the Game
      */
     public void setGamesAges(String newGamesAges) {
         gamesAges = newGamesAges;
     }
+
     /**
      * Gets the Minimum Number Of Players for the Game
      *
@@ -113,12 +120,14 @@ public class Games {
     public String getGamesMinPlayers() {
         return gamesMinPlayers;
     }
+
     /**
      * Sets the Minimum Number Of Players for the Game
      */
     public void setGamesMinPlayers(String newGamesMinPlayers) {
         gamesMinPlayers = newGamesMinPlayers;
     }
+
     /**
      * Gets the Genre of the Game
      *
@@ -127,12 +136,14 @@ public class Games {
     public String getGamesGenre() {
         return gamesGenre;
     }
+
     /**
      * Sets the Genre of the Game
      */
     public void setGamesGenre(String newGamesGenre) {
         gamesGenre = newGamesGenre;
     }
+
     /**
      * Gets the Barcode of the Game
      *
@@ -141,12 +152,14 @@ public class Games {
     public String getGamesBarcode() {
         return gamesBarcode;
     }
+
     /**
      * Sets the Barcode of the Game
      */
     public void setGamesBarcode(String newGamesBarcode) {
         gamesBarcode = newGamesBarcode;
     }
+
     /**
      * Gets the Quantity of Game copies
      *
@@ -155,6 +168,7 @@ public class Games {
     public int getGamesQuantity() {
         return gamesQuantity;
     }
+
     /**
      * Sets the Quantity of Game copies
      */

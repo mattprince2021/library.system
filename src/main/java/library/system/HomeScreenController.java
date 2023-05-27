@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
 /**
  * This controller functions to take the user to the selected scene appropriate for the function that they are
  * completing. Included are buttons for each scene and a button to exit the program.
@@ -44,6 +45,7 @@ public class HomeScreenController {
     private Button addUserButton;
     @FXML
     private Button editUserButton;
+
     /**
      * Routes the user to the Add Book scene
      */
@@ -62,6 +64,7 @@ public class HomeScreenController {
         stage.setScene(addBookScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Edit Book scene
      */
@@ -80,6 +83,7 @@ public class HomeScreenController {
         stage.setScene(editBookScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Add Music scene
      */
@@ -97,6 +101,7 @@ public class HomeScreenController {
         stage.setScene(addMusicScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Edit Music scene
      */
@@ -114,6 +119,7 @@ public class HomeScreenController {
         stage.setScene(editMusicScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Add Games scene
      */
@@ -131,6 +137,7 @@ public class HomeScreenController {
         stage.setScene(addGamesScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Edit Games scene
      */
@@ -148,6 +155,7 @@ public class HomeScreenController {
         stage.setScene(editGamesScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Add Film scene
      */
@@ -165,6 +173,7 @@ public class HomeScreenController {
         stage.setScene(addFilmScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Edit Film scene
      */
@@ -182,6 +191,7 @@ public class HomeScreenController {
         stage.setScene(editFilmScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Add Table scene
      */
@@ -199,6 +209,7 @@ public class HomeScreenController {
         stage.setScene(addTableScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Edit Table scene
      */
@@ -216,6 +227,7 @@ public class HomeScreenController {
         stage.setScene(editTableScene);
         stage.show();
     }
+
     /**
      * Routes the user to the Add User scene
      */
@@ -233,6 +245,7 @@ public class HomeScreenController {
         stage.setScene(addUserScene);
         stage.show();
     }
+
     /**
      * Exits the user from the program
      */

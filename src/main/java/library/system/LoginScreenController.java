@@ -13,7 +13,11 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
+/**
+ * This controller is currently a placeholder for functionality due to be delivered in future release
+ * @author matthewprince
+ * @version 1.0
+ */
 public class LoginScreenController implements Initializable {
     @FXML
     private TextField firstNameTextEntry;
