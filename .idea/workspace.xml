@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Reworked Buttons for simplicity and Navigation">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd8bb58f-d24e-4f85-9a7d-901113385c2a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/EditBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Employee.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddUser_Unused.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseOutputController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookOLD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/DatabaseOutputController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/StockItem.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
