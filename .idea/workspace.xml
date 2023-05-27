@@ -4,17 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Reworked Buttons for simplicity and Navigation">
+    <list default="true" id="0b92d9c0-8bd0-4d1c-95c1-1cd3dd796fac" name="Changes" comment="Final Version of code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddUser_Unused.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseOutputController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookOLD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/DatabaseOutputController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditFilm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/EditMusic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/StockItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddGamesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddMusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/AddUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/BookDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/FilmDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/GamesDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/HomeScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/MusicDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/TablesDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/TablesDatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/system/UserDatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/system/UserDatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684061350676</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Final Version of code">
+      <created>1685182550132</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1685182550132</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +424,8 @@
     <MESSAGE value="Successful Book,Music,Film Write to DB" />
     <MESSAGE value="All functions write to DB" />
     <MESSAGE value="Reworked Buttons for simplicity and Navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reworked Buttons for simplicity and Navigation" />
+    <MESSAGE value="Final Version of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version of code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

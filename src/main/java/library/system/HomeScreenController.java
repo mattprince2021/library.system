@@ -8,7 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
+/**
+ * This controller functions to take the user to the selected scene appropriate for the function that they are
+ * completing. Included are buttons for each scene and a button to exit the program.
+ *
+ * @author matthewprince
+ * @version 1.0
+ */
 public class HomeScreenController {
     @FXML
     private Label welcomeMessage;
@@ -38,7 +44,9 @@ public class HomeScreenController {
     private Button addUserButton;
     @FXML
     private Button editUserButton;
-
+    /**
+     * Routes the user to the Add Book scene
+     */
     @FXML
     protected void addBookButtonAction(ActionEvent event) throws Exception {
 
@@ -54,7 +62,9 @@ public class HomeScreenController {
         stage.setScene(addBookScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Edit Book scene
+     */
     @FXML
     protected void editBookButtonAction(ActionEvent event) throws Exception {
 
@@ -70,7 +80,9 @@ public class HomeScreenController {
         stage.setScene(editBookScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Add Music scene
+     */
     @FXML
     protected void addMusicButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddMusic.fxml"));
@@ -85,7 +97,9 @@ public class HomeScreenController {
         stage.setScene(addMusicScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Edit Music scene
+     */
     @FXML
     protected void editMusicButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditMusic.fxml"));
@@ -100,7 +114,9 @@ public class HomeScreenController {
         stage.setScene(editMusicScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Add Games scene
+     */
     @FXML
     protected void addGamesButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddGames.fxml"));
@@ -115,7 +131,9 @@ public class HomeScreenController {
         stage.setScene(addGamesScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Edit Games scene
+     */
     @FXML
     protected void editGamesButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditGames.fxml"));
@@ -130,7 +148,9 @@ public class HomeScreenController {
         stage.setScene(editGamesScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Add Film scene
+     */
     @FXML
     protected void addFilmButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddFilm.fxml"));
@@ -145,7 +165,9 @@ public class HomeScreenController {
         stage.setScene(addFilmScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Edit Film scene
+     */
     @FXML
     protected void editFilmButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditFilm.fxml"));
@@ -160,7 +182,9 @@ public class HomeScreenController {
         stage.setScene(editFilmScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Add Table scene
+     */
     @FXML
     protected void addTableButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddTable.fxml"));
@@ -175,7 +199,9 @@ public class HomeScreenController {
         stage.setScene(addTableScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Edit Table scene
+     */
     @FXML
     protected void editTableButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditTable.fxml"));
@@ -190,7 +216,9 @@ public class HomeScreenController {
         stage.setScene(editTableScene);
         stage.show();
     }
-
+    /**
+     * Routes the user to the Add User scene
+     */
     @FXML
     protected void addUserButtonAction(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddUser.fxml"));
@@ -205,7 +233,9 @@ public class HomeScreenController {
         stage.setScene(addUserScene);
         stage.show();
     }
-
+    /**
+     * Exits the user from the program
+     */
     @FXML
     protected void logoutButtonAction(ActionEvent event) throws Exception {
         Stage stage = (Stage) logoutButton.getScene().getWindow();

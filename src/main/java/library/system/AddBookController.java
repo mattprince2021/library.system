@@ -10,7 +10,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+/**
+ * This controller functions to take the entered data and write to the database. The data entry fields are aligned to
+ * the class. Included are a submission button, a button to return to the home screen and a button to exit the program
+ *
+ * @author matthewprince
+ * @version 1.0
+ */
 public class AddBookController {
     @FXML
     private Label addBookMessage;
@@ -32,13 +38,17 @@ public class AddBookController {
     private TextField bookISBNTextEntry;
     @FXML
     private TextField bookQuantityTextEntry;
-
+    /**
+     * Exits the user from the program
+     */
     @FXML
     protected void logoutButtonAction(ActionEvent event) throws Exception {
         Stage stage = (Stage) logoutButton.getScene().getWindow();
         stage.close();
     }
-
+    /**
+     * Adds the user input data to the database
+     */
     @FXML
     protected void addBookToDBButtonAction(ActionEvent event) {
         Book bookToAdd = new Book();
@@ -59,7 +69,9 @@ public class AddBookController {
         bookOverviewTextEntry.setText("");
         bookQuantityTextEntry.setText("");
     }
-
+    /**
+     * Returns the user to the Home Screen
+     */
     @FXML
     protected void homeScreenButtonAction(ActionEvent event) throws Exception {
 
